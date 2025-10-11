@@ -1,0 +1,2 @@
+-   Joint forest management 
+- **The Cauvery water dispute**: Karnataka, tamilnadu, 205 TMCF of water

@@ -1,0 +1,1 @@
+- recent transactions page add with no chart (transactions of income and expense both)

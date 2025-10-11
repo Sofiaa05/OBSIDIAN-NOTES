@@ -1,0 +1,4 @@
+- js object notation
+- stoers data in name/value pairs
+- lightweight format for storing and transporting data
+- used when data is sent from server to a web page

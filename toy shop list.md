@@ -1,0 +1,9 @@
+- chess 
+- carrom small
+- gift wrapping paper
+- tape machine
+- uno
+- cactus
+- RC car
+- bed table (not so sure)
+- jenga 

@@ -1,0 +1,7 @@
+| Feature            | Spread Operator                                                                                   | Rest Operator                                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Usage              | Used to expand an iterable into individual elements                                               | Used in function parameters to gather arguments                                             |
+| Example            | [...array]                                                                                        | function functionName(...args) { ... }                                                      |
+| Parameter Position | Can be used anywhere in an array literal or during function call                                  | Must be the last parameter in a function's parameter list. used during function declaration |
+| Return Value       | Creates a new array with copied elements                                                          | Gathers remaining arguments into an array                                                   |
+| Use Cases          | Concatenating arrays, passing arrays as arguments, concatenating objects, copy an array or object | Capturing an arbitrary number of function arguments                                         |

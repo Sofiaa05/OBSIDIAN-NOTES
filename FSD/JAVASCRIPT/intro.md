@@ -1,0 +1,2 @@
+- single threaded language
+- meaning maintains only one call stack 

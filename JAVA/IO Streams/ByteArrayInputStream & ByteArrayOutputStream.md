@@ -1,0 +1,4 @@
+- The ByteArrayInputStream class of the java.io package can be used to read an array of input data (in bytes).
+- It extends the InputStream abstract class.
+- **Note**: In `ByteArrayInputStream`, the input stream is created using the array of bytes. It includes an internal array to store data of that particular byte array
+- source of data is byte array.

@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "57fc24ea5fa052d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e487acb8d866a5eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8207a49d1884ed1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React Routing/What is Routing?.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "What is Routing?"
+            }
+          },
+          {
+            "id": "614bba5580ce6b85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hooks/useEffect.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "useEffect"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a54c85962df09e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "608bed751d7fde34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42f697b95674ca88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "585fbcdb52172f9b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "03143fb6a3549dc8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "bdc782716cfb1396",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab99c374dbdbd0b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7633db593df2abd0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Basics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Basics"
+            }
+          },
+          {
+            "id": "e7d19aef21ca0ef2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Basics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Basics"
+            }
+          },
+          {
+            "id": "81cea77a9e386298",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "96ff1e284a0a55c3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Basics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Basics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8207a49d1884ed1a",
+  "lastOpenFiles": [
+    "React Routing/Links.md",
+    "React Routing/Navigating Programatically.md",
+    "React Routing/Page Not Found.md",
+    "React Routing/Nested Routing.md",
+    "React Routing/What is Routing?.md",
+    "React Routing/Navigating Programatically",
+    "React Routing",
+    "images/Screenshot 2025-02-25 at 12.00.19 PM.png",
+    "Hooks/UseRef.md",
+    "Hooks/useEffect.md",
+    "Forms/Other Inputs.md",
+    "Forms/Controlled Component.md",
+    "Forms/Untitled",
+    "Hooks/UseState.md",
+    "Forms",
+    "Function Components.md",
+    "Events.md",
+    "Lists Rendering.md",
+    "Class Components/States.md",
+    "Class Components/Constructor.md",
+    "images/Screenshot 2025-02-22 at 3.38.45 PM.png",
+    "Hooks/Introduction.md",
+    "Hooks",
+    "Props.md",
+    "Conditional Rendering.md",
+    "JSX.md",
+    "React Render HTML.md",
+    "Folders.md",
+    "Basics.md",
+    "Styling React.md",
+    "PropTypes.md",
+    "Component life cycle.md",
+    "images/Screenshot 2025-02-21 at 3.30.21 PM 1.png",
+    "images/Screenshot 2025-02-21 at 3.30.21 PM.png",
+    "Class Components/Props vs States.md",
+    "images/Pasted image 20250221152901.png",
+    "Component Life Cycle",
+    "images/Screenshot 2025-02-21 at 2.47.59 PM 1.png",
+    "images/Screenshot 2025-02-21 at 2.47.59 PM.png",
+    "images/Pasted image 20250221144747.png",
+    "images/Pasted image 20250221144741.png",
+    "Events",
+    "Class Components",
+    "images",
+    "images/Screenshot 2025-02-21 at 12.24.17 AM.png",
+    "React"
+  ]
+}
