@@ -8,91 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "630f767e1fa5edb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/LOOPS/Programs.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Programs"
-            }
-          },
-          {
-            "id": "eef7a7e4ecea4973",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/MultiThreading/intro and implementation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "intro and implementation"
-            }
-          },
-          {
-            "id": "3fc6fc5a5ec2d533",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL/queires.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "queires"
-            }
-          },
-          {
-            "id": "0b35f0368ae0fa93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking basics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Networking basics"
-            }
-          },
-          {
-            "id": "694839ee332604bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "W3 DSA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "W3 DSA"
-            }
-          },
-          {
             "id": "7e49cf3dd0f8b481",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INFOSYS.md",
-                "mode": "source",
+                "file": "CollegeShit/3rd SEM/Cloud Computing.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INFOSYS"
+              "title": "Cloud Computing"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "13c4b2e5a1954cbc",
@@ -213,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INFOSYS.md",
+                "file": "CollegeShit/3rd SEM/Cloud Computing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of INFOSYS"
+              "title": "Outline of Cloud Computing"
             }
           }
         ],
@@ -242,10 +172,18 @@
   },
   "active": "7e49cf3dd0f8b481",
   "lastOpenFiles": [
+    "Pasted image 20251012135651.png",
+    "Untitled.base",
+    "CollegeShit/3rd SEM/Cloud Computing.md",
+    "W3 DSA.md",
+    "CollegeShit/3rd SEM/CLOUD COMPUTING/Untitled.md",
+    "CollegeShit/3rd SEM/CLOUD COMPUTING",
+    "CollegeShit/3rd SEM",
+    "CollegeShit/3RD SEM.md",
+    "INFOSYS.md",
     "SQL/queires.md",
     "JAVA/MultiThreading/intro and implementation.md",
     "JAVA/Basics.md",
-    "INFOSYS.md",
     "Networking basics.md",
     "analyttica.md",
     "DSA/GFG 160/LL.md",
@@ -257,19 +195,13 @@
     "DSA/basic programs.md",
     "DSA/GFG 160/Arrays.md",
     "DSA/1-D ARRAY/1D Arrays.md",
-    "W3 DSA.md",
     "MERN STACK/NodeJS-Notes/HTTP Module.md",
     "MERN STACK/NodeJS-Notes/How NodeJs Works?.md",
     "MERN STACK/NodeJS-Notes/Introduction.md",
     "MERN STACK/ExpressJs/Introduction.md",
     "FSD/JAVASCRIPT/CallBack and HOF/map, filter and reduce.md",
     "FSD/JAVASCRIPT/Async/async & await.md",
-    "FSD/JAVASCRIPT/Async/Promises.md",
-    "FSD/JAVASCRIPT/Async/callback hell.md",
-    "FSD/JAVASCRIPT/Async/intro.md",
-    "FSD/JAVASCRIPT/CallBack and HOF/callback functions.md",
     "Untitled 1.base",
-    "Untitled.base",
     "WorkFall",
     "DSA/TREE",
     "Untitled 1",
@@ -282,9 +214,7 @@
     "Inter",
     "Simulation Problems/Notes",
     "Interview Shit",
-    "Simulation Problems",
     "Pasted image 20250809233346.png",
-    "SpringBoot",
     "Pasted image 20250721211136.png",
     "Pasted image 20250717214451.png",
     "Pasted image 20250710230000.png"
