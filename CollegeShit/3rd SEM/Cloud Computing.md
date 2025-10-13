@@ -53,20 +53,20 @@ Example:_ Multiple users share the same physical server, but securely separated.
 
 ---
 
-##### **5. Measured service (Pay-as-you-go)**
+##### **4. Measured service (Pay-as-you-go)**
 
 You pay **only for what you use**, like electricity or mobile data.  
 Example:_ If you use 50GB of cloud storage, you pay only for 50GB.
 
 ---
 
-##### 6. Scalability
+##### 5. Scalability
 
 Cloud systems can **easily scale up or down** — add more storage, users, or computing power when needed.
 
 ---
 
-##### 7. Security and reliability
+##### 6. Security and reliability
 
 Most cloud providers offer **data encryption, backup, and redundancy** to protect user data and ensure uptime.
 
@@ -405,16 +405,14 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 
 ##### Key Features of IDaaS
 
-|**Feature**|**Description**|
-|---|---|
-|**Single Sign-On (SSO)**|Users can access multiple applications using one set of login credentials.|
-|**Multi-Factor Authentication (MFA)**|Adds an extra layer of security by requiring two or more verification factors.|
-|**User Provisioning & De-provisioning**|Automatically creates, updates, and removes user accounts across systems.|
-|**Federation Services**|Allows users to access applications across organizational boundaries (using SAML, OAuth, OpenID Connect).|
-|**Directory Integration**|Integrates with Active Directory, LDAP, or other identity directories.|
-|**Access Management**|Controls which users can access which resources based on roles and policies.|
-|**Password Management**|Offers password reset and synchronization capabilities.|
-|**Analytics & Reporting**|Monitors user activities and detects potential security threats.|
+| **Feature**                             | **Description**                                                                                           |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Single Sign-On (SSO)**                | Users can access multiple applications using one set of login credentials.                                |
+| **Multi-Factor Authentication (MFA)**   | Adds an extra layer of security by requiring two or more verification factors.                            |
+| **User Provisioning & De-provisioning** | Automatically creates, updates, and removes user accounts across systems.                                 |
+| **Access Management**                   | Controls which users can access which resources based on roles and policies.                              |
+| **Password Management**                 | Offers password reset and synchronization capabilities.                                                   |
+| **Analytics & Reporting**               | Monitors user activities and detects potential security threats.                                          |
 
 ---
 
@@ -457,16 +455,6 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 - generally used for desktop virtualization, development, and testing environments where a user needs to run multiple OSs on their personal computer.
 - performance lower than type-1 due to OS overhead
 - **Example:** Oracle VirtualBox, VMware workstation
-
-#### Advantages of Virtualization:
-|**Advantage**|**Explanation**|
-|---|---|
-|**Cost Efficiency**|Reduces hardware costs by consolidating servers.|
-|**Resource Utilization**|Efficient use of CPU, memory, and storage.|
-|**Scalability**|Easily add or remove VMs as per demand.|
-|**Disaster Recovery**|Snapshot and cloning help in quick recovery.|
-|**Isolation**|Each VM runs independently, enhancing security.|
-|**Flexibility**|Different OS and applications can coexist on one machine.|
 #### Implementation of Virtualization
 | **Step**                             | **Description**                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------- |
@@ -489,7 +477,7 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 | **4. Disaster Recovery**              | VM snapshots and backups make it easy to restore systems after a failure.                                                         |
 | **5. Data Centers**                   | Virtualization helps data centers run efficiently, using less hardware.                                                           |
 | **6. Education & Training**           | Students and IT trainees use virtual labs for learning different OS and networking setups.                                        |
-| **7. Desktop Virtualization (VDI)**   | Users access their desktops remotely via virtual desktops hosted on servers (e.g., VMware Horizon).                               |
+
 #### Middleware support in Virtualization:
 - Middleware is **software that acts as a bridge** between applications, operating systems, and hardware.  
 - It helps **virtual machines (VMs)** and **applications** communicate efficiently in a virtualized environment.
@@ -540,7 +528,7 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 - A **single physical server** is divided into **many small virtual servers**.
 - Each one can run its own applications.
 - It helps improve performance, cut costs and makes tasks like server migration and energy management easier.
-- **Example:** AWS, Microsoft Hyper-V, VMware vSphere.
+- **Example:** AWS, Microsoft Hyper-V.
 - Reduces hardware cost, better performance.
 
 ##### 6. Data Virtualization: 
@@ -605,7 +593,7 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 
 ---
 
-#### 2. Para-Virtualization
+##### 2. Para-Virtualization
 
 - Requires modifications to the guest operating systems
 - The **guest OS is modified** to work with the **hypervisor**.
@@ -628,7 +616,7 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 
 ---
 
-#### **3. OS-Level Virtualization (Containerization)**
+##### 3. OS-Level Virtualization (Containerization)
 
 - Multiple **isolated containers** share the same OS kernel but have **separate user spaces**.
     
@@ -716,11 +704,11 @@ Security in cloud computing means protecting:
 - **Information Security (InfoSec)** means **protecting information and data** from being accessed, changed, or destroyed by **unauthorized people**.
 ##### Objectives of Information Security (CIA Triad)
 
-| Objective               | Meaning                                                                  | Example                                                          |
-| ----------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| **C – Confidentiality** | Keeping information **private** and accessible only to authorized users. | Using **passwords** or **encryption** to protect files.          |
-| **I – Integrity**       | Making sure data is **accurate and not changed** by unauthorized people. | Checking file **hash values** or using **digital signatures**.   |
-| **A – Availability**    | Ensuring data and systems are **available whenever needed**.             | Using **backups** and **reliable networks** to prevent downtime. |
+| Objective              | Meaning                                                                  | Example                                                          |
+| ---------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| **C –Confidentiality** | Keeping information **private** and accessible only to authorized users. | Using **passwords** or **encryption** to protect files.          |
+| **I – Integrity**      | Making sure data is **accurate and not changed** by unauthorized people. | Checking file **hash values** or using **digital signatures**.   |
+| **A – Availability**   | Ensuring data and systems are **available whenever needed**.             | Using **backups** and **reliable networks** to prevent downtime. |
 ##### Types of Information Security Threats:
 | Type                        | Description                                         | Example                                    |
 | --------------------------- | --------------------------------------------------- | ------------------------------------------ |
@@ -746,7 +734,7 @@ Security in cloud computing means protecting:
 
 #### Privacy:
 - **Privacy** means **protecting user data** — ensuring that personal or sensitive information is **not shared, leaked, or misused** by unauthorized people or even by the cloud provider.
-- Protecting personal info like names, emails, or financial details stored in the cloud.#### 
+- Protecting personal info like names, emails, or financial details stored in the cloud.
 ##### Privacy Issues in Cloud Computing
 
 | Issue               | Explanation                                                                    |
@@ -771,19 +759,6 @@ Security in cloud computing means protecting:
 
 ---
 
-##### 7. Importance of Privacy and Trust
-
-- Builds **confidence** between cloud users and providers
-    
-- Ensures **data safety and reliability**
-    
-- Reduces risk of **data misuse and identity theft**
-    
-- Encourages more organizations to **adopt cloud computing**
-    
-- Helps providers **comply with legal requirements**
----
-
 ## UNIT 3:
 ### Data Centre Architecture and Technologies
 
@@ -791,7 +766,7 @@ Security in cloud computing means protecting:
 
 - A **Data Centre (DC)** is a facility that houses IT infrastructure, such as servers, storage devices, and networking equipment.
     
-- It is used to store, manage, and process large amounts of data efficiently.
+- It is used to **store, manage, and process** large amounts of data efficiently.
     
 - The architecture of a data centre ensures:
     
@@ -829,7 +804,7 @@ Security in cloud computing means protecting:
 - Must provide **fast access** and **redundancy** to prevent data loss.
     
 
-#### **c) Network Layer**
+##### 3. Network Layer
 
 - Connects servers, storage, and users inside and outside the data centre.
     
@@ -844,7 +819,7 @@ Security in cloud computing means protecting:
 - Ensures **low latency** and **high bandwidth** communication.
     
 
-#### **d) Data Centre Infrastructure Layer**
+##### 4. Data Centre Infrastructure Layer
 
 - Includes all  physical support systems that keep the data centre running:
     
@@ -855,7 +830,7 @@ Security in cloud computing means protecting:
 	- **Racks and cabling**: Organized structures that hold servers and storage devices, with proper cabling for connectivity and airflow.
         
 
-#### **e) Virtualization and Hypervisors**
+##### 5. Virtualization and Hypervisors
 
 - Allows a single physical server to run multiple **virtual machines (VMs)**.
     
@@ -870,7 +845,7 @@ Security in cloud computing means protecting:
     - Enables rapid deployment of new services.
         
 
-#### **f) Management and Automation Layer**
+##### 6. Management and Automation Layer
 
 - Tools to **monitor, control, and automate** data centre operations.
     
@@ -879,7 +854,7 @@ Security in cloud computing means protecting:
 - Helps administrators manage resources efficiently and detect problems early.
     
 
-#### **g) Security Layer**
+##### 7. Security Layer
 
 - Ensures protection of both the facility and the data:
     
@@ -890,7 +865,7 @@ Security in cloud computing means protecting:
 - Ensures **data integrity, confidentiality, and compliance**.
     
 
-#### **h) Redundancy and High Availability**
+##### 8. Redundancy and High Availability
 
 - Includes **redundant components** such as backup power, cooling, and network paths.
     
@@ -901,7 +876,6 @@ Security in cloud computing means protecting:
 
 ---
 
-    
 ### Industry Direction:
 - Refers to the **current trends, growth patterns, and future focus areas** of data centre technology. 
 - It shows where the industry is heading and what strategies organizations are adopting.
@@ -945,7 +919,7 @@ Security in cloud computing means protecting:
     - Security measures are now integrated into the design, operations, and management of data centres.
 
 
-#### Operational Phasing
+### Operational Phasing
 
 - Operational phasing describes how a data centre is **managed and maintained day-to-day**.
     
@@ -961,7 +935,7 @@ Security in cloud computing means protecting:
 
 ---
 
-#### Technical Phasing – Overview of 5 Phases
+### Technical Phasing – Overview of 5 Phases
 
 The technical phasing of a data centre focuses on **implementing technology layers efficiently**:
 
