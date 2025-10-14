@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CollegeShit/3rd SEM/IOT.md",
+                "file": "CollegeShit/3rd SEM/CSCL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IOT"
+              "title": "CSCL"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CollegeShit/3rd SEM/IOT.md",
+                "file": "CollegeShit/3rd SEM/CSCL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IOT"
+              "title": "Outline of CSCL"
             }
           }
         ],
@@ -172,8 +172,9 @@
   },
   "active": "7e49cf3dd0f8b481",
   "lastOpenFiles": [
-    "CollegeShit/3rd SEM/Cloud Computing.md",
     "CollegeShit/3rd SEM/IOT.md",
+    "CollegeShit/3rd SEM/CSCL.md",
+    "CollegeShit/3rd SEM/Cloud Computing.md",
     "Pasted image 20251012135651.png",
     "Untitled.base",
     "W3 DSA.md",
@@ -201,7 +202,6 @@
     "MERN STACK/NodeJS-Notes/Introduction.md",
     "MERN STACK/ExpressJs/Introduction.md",
     "FSD/JAVASCRIPT/CallBack and HOF/map, filter and reduce.md",
-    "FSD/JAVASCRIPT/Async/async & await.md",
     "Untitled 1.base",
     "WorkFall",
     "DSA/TREE",
