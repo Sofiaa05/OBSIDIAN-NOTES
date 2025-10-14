@@ -2,7 +2,7 @@
 ### Cyber Security Definition
 - **Cyber Security** refers to the practice of protecting computers, servers, networks, and data from unauthorized access, attacks, damage, or theft.
 - It ensures **confidentiality, integrity, and availability** of information in the digital environment.
-#### Objectives / Principles of Cyber Security (CIA Triad)
+#### Objectives / Principles of Cyber Security (CIA  + AA)
 
 ##### 1. CONFIDENTIALITY
 
@@ -27,8 +27,6 @@
 
 - **Checksums and Hashing**
     
-- **Digital Signatures**
-    
 - **Version Control Systems**
     
 - **Data Validation**
@@ -46,17 +44,15 @@
     
 - **Disaster Recovery Plans**
     
-- **Firewalls and DDoS Protection**
+
     
 ##### 4. AUTHENTICITY
 
 - Authenticity ensures that **data, communication, or users are genuine** and not impersonated or forged.
-- Specific rights for a specific person
+
 
     
 ###### Techniques to Ensure Authenticity:
-
-- **Digital Certificates (SSL/TLS)**
     
 - **Two-Factor Authentication (2FA)**
     
@@ -66,31 +62,28 @@
     
 ##### 5. ACCOUNTABILITY
 
-- Accountability ensures that **all actions in a system can be traced to responsible individuals or entities**.
+- Accountability ensures that **all actions in a system can be traced to responsible individuals.**
     
 ###### Techniques to Ensure Accountability:
 
 - **System Logs and Audit Trails**
     
-- **User IDs and Access Records**
-    
 - **Security Monitoring Systems**
     
 #### Summary Table: Five Key Principles
 
-| **Principle**       | **Meaning**                                        | **Goal**       | **Example / Technique**        |
-| ------------------- | -------------------------------------------------- | -------------- | ------------------------------ |
-| **Confidentiality** | Prevent unauthorized access to data                | Privacy        | Encryption, Access control     |
-| **Integrity**       | Maintain accuracy and consistency of data          | Trust          | Hashing, Digital signatures    |
-| **Availability**    | Ensure data and systems are accessible when needed | Reliability    | Backups, Redundancy            |
-| **Authenticity**    | Verify identity of users and data sources          | Verification   | SSL, 2FA, Digital certificates |
-| **Accountability**  | Trace actions to responsible users                 | Responsibility | Logs, Audit trails             |
+| **Principle**       | **Meaning**                                        | **Goal**       | **Example / Technique**                   |
+| ------------------- | -------------------------------------------------- | -------------- | ----------------------------------------- |
+| **Confidentiality** | Prevent unauthorized access to data                | Privacy        | Encryption, Access control                |
+| **Integrity**       | Maintain accuracy and consistency of data          | Trust          | Hashing, Data validation, version control |
+| **Availability**    | Ensure data and systems are accessible when needed | Reliability    | Backups, Redundancy, Disaster recovery    |
+| **Authenticity**    | Verify identity of users and data sources          | Verification   | 2FA, Digital signatures.                  |
+| **Accountability**  | Trace actions to responsible users                 | Responsibility | Logs, Audit trails                        |
 
 
 ### Internet Governance – Challenges and Constraints
-- **Internet Governance** refers to the development and application of principles, norms, rules, and decision-making procedures that shape the use and evolution of the internet.
+- **Internet Governance** refers to the development and application of principles and rules, that shape the use and evolution of the internet.
 - In simple terms, it means **how the internet is managed, controlled, and regulated globally**.
-
 #### Challenges in Internet Governance
 
 1. **Jurisdictional Issues**
@@ -111,30 +104,14 @@
         
     - Need for international cooperation to track criminals.
         
-4. **Digital Divide**
-    
-    - Unequal access to internet resources between developed and developing nations.
-        
-5. **Content Regulation and Censorship**
+4. **Content Regulation and Censorship**
     
     - Balancing free speech with the need to prevent hate speech and misinformation.
         
-6. **Intellectual Property Rights (IPR) Issues**
+5. **Intellectual Property Rights (IPR) Issues**
     
     - Unauthorized use, copying, or sharing of digital content.
         
-#### Constraints of Internet Governance
-
-- **Lack of a Single Global Authority** – No centralized body can enforce laws globally.
-    
-- **Different Legal Systems** – Every country has unique cyber laws.
-    
-- **Political Conflicts** – Governments may have different agendas (e.g., surveillance vs privacy).
-    
-- **Technical Complexity** – Rapid technological changes make regulation difficult.
-    
-- **Enforcement Difficulties** – Tracking and punishing offenders across borders is challenging
-
 ---
 ### Cyber Threats
 - A **Cyber Threat** is any **potential danger or malicious attempt** to damage, steal, or disrupt data, computer systems, or digital networks.
@@ -153,7 +130,7 @@
 
 #####  1. STRUCTURED CYBER THREATS
 
-- Structured cyber threats are **well-planned, organized, and professionally executed attacks** carried out by **skilled attackers or groups** with **specific objectives**, such as stealing confidential data, espionage, or damaging critical infrastructure.
+- Structured cyber threats are **well-planned, organized, and professionally executed attacks** carried out by **skilled attackers or groups** with **specific objectives**.
 
 - These threats are **systematic**, use **advanced tools and techniques**, and often involve **team coordination**.
 
@@ -231,16 +208,15 @@
 - To cause small-scale disruptions.
 ##### DIFFERENCE BETWEEN STRUCTURED AND UNSTRUCTURED CYBER THREATS
 
-| **Basis**                | **Structured Cyber Threats**                                     | **Unstructured Cyber Threats**                               |
-| ------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------ |
-| **Definition**           | Planned and organized attacks by skilled professionals.          | Random or unplanned attacks by amateurs.                     |
-| **Skill Level**          | High — involves trained hackers, experts, or state actors.       | Low — carried out by beginners or “script kiddies.”          |
-| **Motivation**           | Financial gain, espionage, political or military objectives.     | Fun, curiosity, revenge, or showing off.                     |
-| **Planning**             | Long-term, strategic, and coordinated.                           | Short-term, unplanned, and opportunistic.                    |
-| **Tools Used**           | Advanced, customized hacking tools and zero-day exploits.        | Freely available software and basic scripts.                 |
-| **Impact**               | Severe, large-scale, and long-lasting damage.                    | Limited, small-scale, and short-term impact.                 |
-| **Examples**             | State-sponsored APT attacks, cyber terrorism, ransomware groups. | Website defacement, random virus spread, small DDoS attacks. |
-| **Detection Difficulty** | Difficult to detect; often hidden for long periods.              | Easier to detect and trace.                                  |
+| **Basis**                | **Structured Cyber Threats**                                 | **Unstructured Cyber Threats**                      |
+| ------------------------ | ------------------------------------------------------------ | --------------------------------------------------- |
+| **Definition**           | Planned and organized attacks by skilled professionals.      | Random or unplanned attacks by amateurs.            |
+| **Skill Level**          | High — involves trained hackers, experts.                    | Low — carried out by beginners or “script kiddies.” |
+| **Motivation**           | Financial gain, espionage, political or military objectives. | Fun, curiosity, revenge, or showing off.            |
+| **Planning**             | Long-term, strategic, and coordinated.                       | Short-term, unplanned, and opportunistic.           |
+| **Tools Used**           | Advanced, customized hacking tools                           | Free ready-made hacking tools                       |
+| **Impact**               | Severe, large-scale, and long-lasting damage.                | Limited, small-scale, and short-term impact.        |
+| **Detection Difficulty** | Difficult to detect; often hidden for long periods.          | Easier to detect and trace.                         |
 
 #### CyberSquatting
 
@@ -305,17 +281,14 @@ A consumer who had a bad experience with ABC Airlines may create a site like `ab
 
 ### Cyber Crime / Cyber Offence and its Categories
 
-#### **1. Definition**
-
-- A **cyber crime** is any **illegal act or criminal activity** that involves the use of **computers, digital devices, or networks** as the **main tool, target, or place of crime**.
+- A **cyber crime** is any **illegal act or criminal activity** that involves the use of **computers, digital devices, or networks**.
 
 - In simple terms, **cyber crime** means **committing a crime using a computer or the internet**.
     
-#### 2. CATEGORIES / CLASSIFICATION OF CYBER CRIMES
+####  CATEGORIES / CLASSIFICATION OF CYBER CRIMES
 
 - Cyber crimes can be classified based on how the **computer is involved** or the **type of offense committed**.  
 ##### 1. Crimes Against Individuals
-
 - These are crimes that target **individuals or their private data**.  
 - The aim is usually to **harm, harass, or steal personal information**.
 
@@ -335,19 +308,16 @@ A consumer who had a bad experience with ABC Airlines may create a site like `ab
     
 
 ---
-
 ##### 2. Crimes Against Property
 
 - These crimes target **data, information, or intellectual property** belonging to organizations or individuals.  
-- The motive is often **financial gain or destruction of digital assets**.
+- The motive is often **financial gain**.
 
 ###### Examples:
 
 - **Hacking** – Unauthorized access to computer systems.
     
 - **Data Theft** – Stealing confidential or business data.
-    
-- **Ransomware Attacks** – Encrypting data and demanding ransom for release.
     
 - **Denial of Service (DoS) Attacks** – Disrupting a website or network service.
     
@@ -362,14 +332,11 @@ A consumer who had a bad experience with ABC Airlines may create a site like `ab
 
 - These are serious cyber crimes that target **national security, defense systems, or public infrastructure**.  
 - They are often **politically or ideologically motivated**.
-
 ###### Examples:
 
 - **Cyber Terrorism** – Attacks on critical systems (like power grids or transport) to create fear or chaos.
     
-- **Espionage / Cyber Spying** – Stealing sensitive information from government or military databases.
-    
-- **Website Defacement** – Hacking and altering official government websites.
+- **Espionage / Cyber Spying** – Stealing sensitive information from government or military databases. 
     
 - **Propaganda and Fake News** – Spreading false information to influence public opinion.
     
@@ -387,22 +354,20 @@ A consumer who had a bad experience with ABC Airlines may create a site like `ab
 ---
 
 ### Classification of Cyber Crimes
-| **Cyber Offense**              | **What is it?**                                                               | **How to Prevent**                                                                          |
-| ------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| **Email Spoofing**             | Sending emails that appear to come from a trusted source to trick recipients. | Verify sender addresses, use email authentication (SPF/DKIM), avoid clicking unknown links. |
-| **Spamming**                   | Sending unsolicited or bulk emails, often advertising or phishing attempts.   | Use spam filters, block suspicious senders, avoid sharing your email publicly.              |
-| **Cyber Defamation**           | Posting false or harmful information online to damage a person’s reputation.  | Avoid sharing unverified info, use privacy settings, report defamatory content.             |
-| **Internet Time Theft**        | Using someone else’s internet service without permission.                     | Secure Wi-Fi with strong passwords, use WPA3 encryption, monitor connected devices.         |
-| **Data Diddling**              | Unauthorized modification of data before or during entry into a system.       | Use access control, audit trails, data validation, and encryption.                          |
-| **Espionage**                  | Unauthorized access to confidential data for spying or competitive advantage. | Use encryption, secure networks, multi-factor authentication, limit access.                 |
-| **Hacking**                    | Unauthorized access to computer systems to steal or manipulate information.   | Use firewalls, strong passwords, antivirus software, and keep systems updated.              |
-| **Online Frauds**              | Deceptive schemes conducted via the internet for financial gain.              | Verify websites and sellers, use secure payment methods, enable transaction alerts.         |
-| **Computer Sabotage**          | Deliberate destruction or disruption of computer systems or data.             | Regular backups, strong access control, intrusion detection systems.                        |
-| **Email Bombing**              | Sending massive numbers of emails to overwhelm a recipient’s inbox or server. | Use email filtering, rate limiting, and monitor server traffic.                             |
-| **Computer Network Intrusion** | Unauthorized access to a network to steal, alter, or destroy data.            | Firewalls, intrusion detection systems, strong authentication, regular monitoring.          |
-| **Password Sniffing**          | Capturing passwords over networks using packet sniffers.                      | Use encrypted connections (HTTPS, VPN), strong passwords, and two-factor authentication.    |
-| **Credit Card Frauds**         | Unauthorized use of credit/debit card information to steal money.             | Use secure payment gateways, monitor statements, and avoid public Wi-Fi for transactions.   |
-| **Identity Theft**             | Stealing personal information to impersonate someone for fraud or gain.       | Keep personal info private, use strong passwords, enable 2FA, monitor accounts regularly.   |
+| **Cyber Offense**       | **What is it?**                                                               | **How to Prevent**                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Email Spoofing**      | Sending emails that appear to come from a trusted source to trick recipients. | Verify sender addresses, use email authentication (SPF/DKIM), avoid clicking unknown links. |
+| **Spamming**            | Sending unsolicited or bulk emails, often advertising or phishing attempts.   | Use spam filters, block suspicious senders, avoid sharing your email publicly.              |
+| **Cyber Defamation**    | Posting false or harmful information online to damage a person’s reputation.  | Avoid sharing unverified info, use privacy settings, report defamatory content.             |
+| **Internet Time Theft** | Using someone else’s internet service without permission.                     | Secure Wi-Fi with strong passwords, use WPA3 encryption, monitor connected devices.         |
+| **Data Diddling**       | Unauthorized modification of data before or during entry into a system.       | Use access control, audit trails, data validation, and encryption.                          |
+| **Espionage**           | Unauthorized access to confidential data for spying or competitive advantage. | Use encryption, secure networks, multi-factor authentication, limit access.                 |
+| **Hacking**             | Unauthorized access to computer systems to steal or manipulate information.   | Use firewalls, strong passwords, antivirus software, and keep systems updated.              |
+| **Online Frauds**       | Deceptive schemes conducted via the internet for financial gain.              | Verify websites and sellers, use secure payment methods, enable transaction alerts.         |
+| **Email Bombing**       | Sending massive numbers of emails to overwhelm a recipient’s inbox or server. | Use email filtering, rate limiting, and monitor server traffic.                             |
+| **Password Sniffing**   | Capturing passwords over networks using packet sniffers.                      | Use encrypted connections (HTTPS, VPN), strong passwords, and two-factor authentication.    |
+| **Credit Card Frauds**  | Unauthorized use of credit/debit card information to steal money.             | Use secure payment gateways, monitor statements, and avoid public Wi-Fi for transactions.   |
+| **Identity Theft**      | Stealing personal information to impersonate someone for fraud or gain.       | Keep personal info private, use strong passwords, enable 2FA, monitor accounts regularly.   |
 ### Wireless Computing and cyber attacks associated with it
 
 #### Definition:
@@ -457,8 +422,6 @@ A consumer who had a bad experience with ABC Airlines may create a site like `ab
 
 ##### 2. How Cyberattacks Happen in Wireless Computing (Wi-Fi and Wireless Networks)
 
-Wireless networks are especially vulnerable because **anyone within range** can attempt to connect or intercept signals.
-
 ###### Common Wireless Network Attacks:
 
 1. **Eavesdropping / Packet Sniffing**
@@ -491,7 +454,6 @@ Wireless networks are especially vulnerable because **anyone within range** can 
     
     - Hacker changes the MAC address of their device to impersonate another device and bypass access control.
         
-
 ##### Security Measures / Prevention Techniques
 
 |**Area**|**Preventive Measures**|
@@ -500,9 +462,6 @@ Wireless networks are especially vulnerable because **anyone within range** can 
 |**Wireless Networks**|- Use **WPA3 encryption** for Wi-Fi.- Disable auto-connect to open networks.- Change default router password.- Use **VPN** when using public Wi-Fi.- Regularly monitor connected devices.|
 
 ---
-
-
-
 ## UNIT 2
 
 ### Vulnerabilities 
@@ -514,12 +473,14 @@ Wireless networks are especially vulnerable because **anyone within range** can 
 #### Classification of Cybersecurity Vulnerabilities
 
 Cybersecurity vulnerabilities can be classified into **four main categories**:
-
-
+- Software vulnerabilities
+- Hardware vulnerabiliites
+- Network vulnerabilities
+- Human / social vulnerabilities
 ##### 1. Software Vulnerabilities
 
 - Weaknesses in operating systems, applications, or software code.
-    
+
 - Can allow **unauthorized access, data leaks, or system crashes**.
     
 - **Examples:**
@@ -647,9 +608,7 @@ Cybersecurity vulnerabilities can be classified into **four main categories**:
     
 - Some services may log user activity if not trustworthy.
     
-
 ---
-
 
 ### Why cyber attack?
 | **Motive / Reason**                  | **One-line Explanation**                                                    |
@@ -739,7 +698,7 @@ Malware is any **malicious software** that is designed to **damage your computer
     
 - Once inside your device, it can **slow down your system, steal data, or let attackers control your device**.
     
-- **Types**: Trojan horse, 
+- **Types**: Trojan horse, virus, worms, spyware, keyloggers, backdoors.
 **Example:**  
 A malicious app that sends your photos and messages to someone else without your knowledge.
 
@@ -766,7 +725,9 @@ Opening an infected document from email causes your files to get damaged and spr
 #### Worms
 
 **Definition:**  
-A worm is malware that **spreads by itself** over networks, without needing a person to open a file.
+- A worm is malware that **spreads by itself** over networks, without needing a person to open a file.
+- look for pathways between computers (computer networks) to spread and replicate themselves
+
 
 **How it works:**
 
@@ -900,7 +861,7 @@ A simple program that assumes a name will be 20 characters crashes or behaves ba
 
 ---
 
-#### 3. Identity Theft
+#### Identity Theft
 
 **Definition:**  
 Identity theft is when someone steals another person’s personal information (name, ID numbers, bank details) and uses it to commit fraud or pretend to be that person.
@@ -930,7 +891,7 @@ Protect personal data—use strong passwords, don’t share sensitive info publi
 | **Password cracking**       | Finding someone’s password to access accounts without permission.          |
 | **Keyloggers and spywares** | Programs that secretly record your activity or information on your device. |
 
-### Extra Topics
+## Extra Topics
 #### Digital Signatures
 
 **Definition:**  
