@@ -22,9 +22,6 @@
     
 6. **Export Promotion and Import Substitution:**  
     Entrepreneurial ventures expand exports and reduce dependency on imports, strengthening the balance of payments.
-
-7. **Wealth Creation and Distribution:**  
-    Entrepreneurs generate wealth and contribute to equitable income distribution through employment and business opportunities.
     
 8. **Increased National Income:**  
     New ventures contribute to GDP growth and government revenue through taxes.
@@ -52,20 +49,19 @@
     
 #### Difference between Entrepreneur and Intrapreneur
 
-|**Basis**|**Entrepreneur**|**Intrapreneur**|
-|---|---|---|
-|**Meaning**|A person who starts and owns a new business.|A person who works within an existing organization and develops new ideas or projects.|
-|**Ownership**|Owns the business.|Works as an employee.|
-|**Risk**|Bears financial and business risks.|Risk is borne by the organization.|
-|**Resources**|Uses personal or borrowed resources.|Uses company resources.|
-|**Innovation**|Innovates independently to start a new venture.|Innovates within the organization to improve or create products.|
-|**Reward**|Earns profit or loss.|Gets salary, bonus, or incentives.|
-|**Freedom**|Has full control and freedom.|Limited freedom; must follow company policies.|
-|**Example**|Ratan Tata, Dhirubhai Ambani, Elon Musk.|Employees in Google working on new projects like Gmail or Android.|
+| **Basis**      | **Entrepreneur**                                | **Intrapreneur**                                                                       |
+| -------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Meaning**    | A person who starts and owns a new business.    | A person who works within an existing organization and develops new ideas or projects. |
+| **Ownership**  | Owns the business.                              | Works as an employee.                                                                  |
+| **Risk**       | Bears financial and business risks.             | Risk is borne by the organization.                                                     |
+| **Resources**  | Uses personal or borrowed resources.            | Uses company resources.                                                                |
+| **Reward**     | Earns profit or loss.                           | Gets salary, bonus, or incentives.                                                     |
+| **Freedom**    | Has full control and freedom.                   | Limited freedom; must follow company policies.                                         |
+| **Example**    | Ratan Tata, Dhirubhai Ambani, Elon Musk.        | Employees in Google working on new projects like Gmail or Android.                     |
 
-- **Entrepreneur** = Starts own business.
+- **Entrepreneur** = owner
     
-- **Intrapreneur** = Innovates inside an existing company.
+- **Intrapreneur** = employee
     
 
 ---
@@ -156,8 +152,6 @@
 
 - Shortage of skilled labor
     
-- Employee motivation and retention issues
-    
 - Training and development challenges
     
 
@@ -202,8 +196,6 @@
     
 - Fear of failure
     
-- Overload of responsibilities
-    
 - Work-life imbalance
     
 ### Entrepreneurial Growth – Meaning
@@ -213,7 +205,7 @@
 
 #### Economic Factors
 
-##### 1. Capital or Finance Availability
+##### 1. Capital Availability
 
 - Money is the **lifeblood** of business.
     
@@ -266,7 +258,7 @@
 
 ---
 
-#### 2. Non-Economic Factors
+#### Non-Economic Factors
 
 These are **social, cultural, psychological, and political** factors that indirectly affect entrepreneurship.
 
@@ -327,17 +319,16 @@ These are **social, cultural, psychological, and political** factors that indire
 
 ### Entrepreneur vs Manager
 
-|**Basis**|**Entrepreneur**|**Manager**|
-|---|---|---|
-|**Meaning**|Person who starts and owns a business.|Person who runs and controls business operations.|
-|**Role**|Creates and develops the enterprise.|Manages and administers existing enterprise.|
-|**Ownership**|Owner of the business.|Employee of the business.|
-|**Risk**|Bears all business risks and losses.|Does not bear risk; gets fixed salary.|
-|**Innovation**|Introduces new ideas and products.|Implements ideas and policies.|
-|**Reward**|Earns profit or loss.|Gets salary or bonus.|
-|**Focus**|On growth, innovation, and long-term vision.|On stability, control, and short-term efficiency.|
-|**Decision-Making**|Takes independent decisions.|Follows company rules and superiors’ decisions.|
-|**Example**|Ratan Tata, Elon Musk.|A company’s operations or marketing manager.|
+| **Basis**           | **Entrepreneur**                             | **Manager**                                       |
+| ------------------- | -------------------------------------------- | ------------------------------------------------- |
+| **Meaning**         | Person who starts and owns a business.       | Person who runs and controls business operations. |
+| **Role**            | Creates and develops the enterprise.         | Manages and administers existing enterprise.      |
+| **Ownership**       | Owner of the business.                       | Employee of the business.                         |
+| **Risk**            | Bears all business risks and losses.         | Does not bear risk; gets fixed salary.            |
+| **Innovation**      | Introduces new ideas and products.           | Implements ideas and policies.                    |
+| **Reward**          | Earns profit or loss.                        | Gets salary or bonus.                             |
+| **Decision-Making** | Takes independent decisions.                 | Follows company rules and superiors’ decisions.   |
+| **Example**         | Ratan Tata, Elon Musk.                       | A company’s operations or marketing manager.      |
 
 ### Entrepreneur vs Entrepreneurship
 | **Basis**    | **Entrepreneurship**                                | **Entrepreneur**                                    |
@@ -346,20 +337,19 @@ These are **social, cultural, psychological, and political** factors that indire
 | **Nature**   | Process or activity.                                | Individual or person.                               |
 | **Function** | Involves innovation, risk-taking, and organization. | Performs innovation, risk-taking, and organization. |
 | **Scope**    | Broad — covers all business functions.              | Narrow — focuses on the individual’s role.          |
-| **Outcome**  | Leads to creation and growth of enterprises.        | Leads the enterprise and makes key decisions.       |
 | **Example**  | Entrepreneurship in India promotes startups.        | Ratan Tata is an entrepreneur.                      |
 
 ### Classification and Types of Entrepreneurs
 
 #### 1. On the Basis of Type of Business
 
-|**Type**|**Meaning**|
-|---|---|
-|**Business Entrepreneur**|Engaged in manufacturing, trading, or services to earn profit.|
-|**Trading Entrepreneur**|Buys and sells goods — acts as a middleman.|
-|**Industrial Entrepreneur**|Starts industrial units producing goods.|
-|**Corporate Entrepreneur**|Develops and manages large business organizations.|
-|**Agricultural Entrepreneur**|Engaged in agriculture, dairy, poultry, or agro-based industries.|
+| **Type**                      | **Meaning**                                                    |
+| ----------------------------- | -------------------------------------------------------------- |
+| **Business Entrepreneur**     | Engaged in manufacturing, trading, or services to earn profit. |
+| **Trading Entrepreneur**      | Buys and sells goods — acts as a middleman.                    |
+| **Industrial Entrepreneur**   | Starts industrial units producing goods.                       |
+| **Corporate Entrepreneur**    | Develops and manages large business organizations.             |
+| **Agricultural Entrepreneur** | Engaged in agriculture, dairy or poultry industries.           |
 
 ---
 
@@ -533,10 +523,6 @@ Entrepreneurship arises due to **social and cultural changes**.
     
 - They help entrepreneurs **take right decisions, handle risks, innovate, and achieve goals**.
     
-
-**In simple words:**  
-It’s the **combination of knowledge, skills, and personal qualities** that makes an entrepreneur effective.
-
 #### Major Entrepreneurial Competencies
 
 1. **Opportunity-Seeking and Initiative:**
@@ -563,11 +549,11 @@ It’s the **combination of knowledge, skills, and personal qualities** that mak
     
     - Actively **gathering knowledge** about markets, technologies, and competitors.
         
-7. **Planning and Goal-Setting:**
+7. **Planning and Goal-Orientation:**
     
     - Setting **clear goals** and planning steps to achieve them.
         
-8. **Human Relations / Leadership:**
+8. **Leadership skills:**
     
     - Ability to **motivate and manage people** effectively.
         
@@ -575,7 +561,7 @@ It’s the **combination of knowledge, skills, and personal qualities** that mak
     
     - Belief in one’s **abilities, ideas, and business potential**.
         
-10. **Mobilizing Resources:**
+10. **Organising Resources:**
     
     - Using **financial, human, and material resources efficiently**.
         
@@ -736,6 +722,7 @@ It’s **training that teaches how to become a successful entrepreneur**.
 - Encourages **creativity and problem-solving**
     
 - Drives **economic and social development**
+- Identifies new opportunities
     
 
 **Example:** Smartphones replacing traditional mobile phones.
@@ -790,11 +777,12 @@ It’s **training that teaches how to become a successful entrepreneur**.
 ### PYQ
 
 #### Question 1:
--  Discuss the role of innovation in enterpreneurship. How does innovation drive the creation and growth of new ventures, and why is it considered a key factor in the success of an enterpreneur? Provide examples of how innovative ideas have transformed industries or led to the development of successful startups. remember to content in a language i can learn and understand remmeber for exams
+-  Discuss the role of innovation in enterpreneurship. How does innovation drive the creation and growth of new ventures, and why is it considered a key factor in the success of an enterpreneur? Provide examples of how innovative ideas have transformed industries or led to the development of successful startups. 
 ##### Answer:
 ###### Role of Innovation in Entrepreneurship
-
-**Innovation** is the process of **introducing new ideas, methods, products, or services**. In entrepreneurship, innovation is **crucial for creating, sustaining, and growing businesses**.
+- Innovation is the **process of introducing something new or improving existing products, processes, or services**.  
+    
+- It is a key feature of entrepreneurship and drives **business growth and economic development**.
 ###### How Innovation Drives Creation and Growth of New Ventures
 
 1. **Identifying Opportunities:**
@@ -975,8 +963,7 @@ It’s **training that teaches how to become a successful entrepreneur**.
 
 #### Question 3: 
 
-- Describe the role of professional etiquette in fostering positive workplace relationships and organizational culture. Provide examples of specific etiquette guidelines that contribute to a respectful and collaborative work environment. remember easy language to learn, understand and remember in exam. 
-
+- Describe the role of professional etiquette in fostering positive workplace relationships and organizational culture. Provide examples of specific etiquette guidelines that contribute to a respectful and collaborative work environment. 
 ##### Role of Professional Etiquette in Workplace
 
 **Professional etiquette** refers to **polite, respectful, and appropriate behavior** in a professional environment. It is **essential for fostering positive workplace relationships and a healthy organizational culture**.
@@ -1049,7 +1036,7 @@ It’s **training that teaches how to become a successful entrepreneur**.
 
 ---
 #### Question 4: 
-- Explain the importance of table manners in social and professional settings. Discuss common table manners and dining etiquette, including proper use of utensils, posture, and conversation etiquette. Provide examples to illustrate how adhering to table manners enhances interpersonal relationships and reflects professionalism. Finally, offer tips for navigating challenging dining situations with grace and confidence. remember easy language to learn, understand and remember in exam.
+- Explain the importance of table manners in social and professional settings. Discuss common table manners and dining etiquette, including proper use of utensils, posture, and conversation etiquette. Provide examples to illustrate how adhering to table manners enhances interpersonal relationships and reflects professionalism. Finally, offer tips for navigating challenging dining situations with grace and confidence.
 
 ##### Importance of Table Manners
 
