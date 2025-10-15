@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CollegeShit/3rd SEM/CSCL.md",
+                "file": "CollegeShit/3rd SEM/EM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSCL"
+              "title": "EM"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CollegeShit/3rd SEM/CSCL.md",
+                "file": "CollegeShit/3rd SEM/EM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CSCL"
+              "title": "Outline of EM"
             }
           }
         ],
@@ -172,8 +172,9 @@
   },
   "active": "7e49cf3dd0f8b481",
   "lastOpenFiles": [
-    "CollegeShit/3rd SEM/IOT.md",
     "CollegeShit/3rd SEM/CSCL.md",
+    "CollegeShit/3rd SEM/EM.md",
+    "CollegeShit/3rd SEM/IOT.md",
     "CollegeShit/3rd SEM/Cloud Computing.md",
     "Pasted image 20251012135651.png",
     "Untitled.base",
@@ -201,7 +202,6 @@
     "MERN STACK/NodeJS-Notes/How NodeJs Works?.md",
     "MERN STACK/NodeJS-Notes/Introduction.md",
     "MERN STACK/ExpressJs/Introduction.md",
-    "FSD/JAVASCRIPT/CallBack and HOF/map, filter and reduce.md",
     "Untitled 1.base",
     "WorkFall",
     "DSA/TREE",
