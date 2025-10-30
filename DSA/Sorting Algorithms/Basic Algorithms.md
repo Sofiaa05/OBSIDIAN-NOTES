@@ -287,6 +287,36 @@ class MergeSort{
 
 ## Radix Sort
 
+- Radix Sort is a **non-comparative sorting algorithm** that sorts numbers **digit by digit**, starting either from:
+
+	- **Least Significant Digit (LSD)** → rightmost digit first (most common), or
+	    
+	- **Most Significant Digit (MSD)** → leftmost digit first.
+    
+- We’ll use **LSD Radix Sort** here.
+
+---
+
+### How it Works 
+
+Example: Sort \[170, 45, 75, 90, 802, 24, 2, 66]
+
+**Step 1:** Sort by 1st digit (ones place)  
+→ \[170, 90, 802, 2, 24, 45, 75, 66]
+
+**Step 2:** Sort by 2nd digit (tens place)  
+→ \[802, 2, 24, 45, 66, 170, 75, 90]
+
+**Step 3:** Sort by 3rd digit (hundreds place)  
+→ \[2, 24, 45, 66, 75, 90, 170, 802]
+
+Final sorted list!
+
+---
+
+### Radix Sort uses **Counting Sort** as a subroutine
+
+- Counting Sort is a **stable sorting algorithm** that sorts digits (0–9) efficiently.
 ```java
 class RadixSort{
 
