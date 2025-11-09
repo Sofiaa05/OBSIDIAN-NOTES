@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Sorting Algorithms/Basic Algorithms.md",
+                "file": "CollegeShit/3rd SEM/DAA/Topics to study.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Algorithms"
+              "title": "Topics to study"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13c4b2e5a1954cbc",
@@ -173,14 +172,28 @@
   },
   "active": "7e49cf3dd0f8b481",
   "lastOpenFiles": [
-    "eVENT-PLANNER.md",
+    "CollegeShit/3rd SEM/DAA/UNIT 3.md",
+    "CollegeShit/3rd SEM/DAA/Topics to study.md",
+    "Pasted image 20251110024828.png",
+    "[www.geeksforgeeks.org/dsa/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2.md",
+    "[www.geeksforgeeks.org/dsa",
+    "[www.geeksforgeeks.org",
+    "www.geeksforgeeks.org/dsa/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2.md",
+    "www.geeksforgeeks.org/dsa",
+    "www.geeksforgeeks.org",
+    "Kruskal.md",
+    "Pasted image 20251109165215.png",
+    "CollegeShit/3rd SEM/DAA",
+    "DSA/TREE/BST.md",
+    "Wedding template.md",
+    "DSA/Collections.md",
+    "DSA/GFG 160/LL.md",
     "DSA/Sorting Algorithms/Basic Algorithms.md",
+    "eVENT-PLANNER.md",
     "DSA/Sorting Algorithms",
     "Pasted image 20251012135651.png",
-    "DSA/TREE/BST.md",
     "Untitled.base",
     "DSA/TREE/Guide  to learn trees.md",
-    "DSA/GFG 160/LL.md",
     "CollegeShit/3rd SEM/EM.md",
     "CollegeShit/3rd SEM/CSCL.md",
     "CollegeShit/3rd SEM/IOT.md",
@@ -196,28 +209,13 @@
     "JAVA/Basics.md",
     "Networking basics.md",
     "analyttica.md",
-    "JAVA/LOOPS/Programs.md",
-    "JAVA/Arrays/Single Dimensional Arrays.md",
-    "DSA/Additional Tips.md",
-    "DSA/Arrays and Hashmaps and Frequency Array.md",
-    "DSA/Collections.md",
-    "DSA/basic programs.md",
-    "DSA/GFG 160/Arrays.md",
-    "DSA/1-D ARRAY/1D Arrays.md",
     "Untitled 1.base",
-    "WorkFall",
-    "DSA/TREE",
-    "Untitled 1",
     "Pasted image 20250903172446.png",
     "Pasted image 20250426191234.png",
     "Pasted image 20250710230013.png",
     "Pasted image 20250823163343.png",
     "Pasted image 20250712235118.png",
     "Pasted image 20250715172545.png",
-    "Inter",
-    "Simulation Problems/Notes",
-    "Pasted image 20250809233346.png",
-    "Pasted image 20250721211136.png",
-    "Pasted image 20250717214451.png"
+    "Pasted image 20250809233346.png"
   ]
 }
