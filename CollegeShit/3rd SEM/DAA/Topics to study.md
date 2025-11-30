@@ -52,16 +52,18 @@
 - optimal bst problem, height of balanced bst
 - #### Bellman ford vs Dijkstra
 
-| Feature                 | **Dijkstra**                             | **Bellman-Ford**                      |
-| ----------------------- | ---------------------------------------- | ------------------------------------- |
-| **Edge Weights**        | Works **only with non-negative weights** | Works with **negative weights** too   |
-| **Approach**            | **Greedy algorithm**                     | **Dynamic programming**               |
-| **Cycle Detection**     | Cannot detect negative cycles            | Can **detect negative weight cycles** |
-| **Time Complexity**     | O((V + E) log V) using a min-heap        | O(V × E)                              |
-| **Space Complexity**    | O(V)                                     | O(V)                                  |
+| Feature              | **Dijkstra**                             | **Bellman-Ford**                      |
+| -------------------- | ---------------------------------------- | ------------------------------------- |
+| **Edge Weights**     | Works **only with non-negative weights** | Works with **negative weights** too   |
+| **Approach**         | **Greedy algorithm**                     | **Dynamic programming**               |
+| **Cycle Detection**  | Cannot detect negative cycles            | Can **detect negative weight cycles** |
+| **Time Complexity**  | O((V + E) log V) using a min-heap        | O(V × E)                              |
+| **Space Complexity** | O(V)                                     | O(V)                                  |
 
 - #### **recursive equation of multiple chain matrix**
 Let `m[i][j]` = minimum number of scalar multiplications needed to multiply matrices from `A_i` to `A_j`.
 
 Then the **recursive equation** is:
-![[Pasted image 20251110024828.png]]
+![[Pasted image 20251110024828.png]] 
+
+![[Pasted image 20251110090126.png]]

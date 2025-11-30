@@ -150,12 +150,12 @@ public class InsertionSort{
 ```java
 class QuickSort{
 	//function to partition the array
-	public int partition(int arr[], int start, int end){
+	public int partition(int arr[], int low, int end){
 		int pivot = arr[end]; //pivot element. Usually the last element in the array
 		int i = low - 1; //index of smaller element. 
 		
 		for (int j = low; j < end; j++){
-			if (arr[j] < pivot){
+			if (arr[j] <= pivot){
 				i++;
 				int temp = arr[j];
 				arr[j] = arr[i];
