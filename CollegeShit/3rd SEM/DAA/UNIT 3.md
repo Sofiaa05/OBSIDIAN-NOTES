@@ -19,8 +19,6 @@ For any cut in the graph, the smallest edge crossing that cut belongs to an MST.
 **Optimal substructure:**  
 Combining MSTs of connected components still gives a global MST.
 
-
-
 ## Prim's
 (https://www.w3schools.com/dsa/dsa_algo_mst_prim.php)
 - Prim's algorithm finds the Minimum Spanning Tree (MST) in a connected and undirected graph.
