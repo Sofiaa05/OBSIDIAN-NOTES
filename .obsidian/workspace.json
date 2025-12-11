@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CollegeShit/3rd SEM/DAA/UNIT 3.md",
+                "file": "CollegeShit/Externals/AIML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UNIT 3"
+              "title": "AIML"
             }
           },
           {
@@ -281,7 +281,9 @@
   },
   "active": "cf5a1d9ae53eceb0",
   "lastOpenFiles": [
+    "Pasted image 20251211160642.png",
     "CollegeShit/Externals/DAA.md",
+    "CollegeShit/Externals/AIML.md",
     "CollegeShit/3rd SEM/DAA/UNIT 3.md",
     "Pasted image 20251208221721.png",
     "WW.md",
@@ -308,8 +310,6 @@
     "DP.md",
     "SQL/CRUD.md",
     "SQL/Indexing.md",
-    "SQL/queires.md",
-    "SQL/BETWEEN.md",
     "demo",
     "Pasted image 20251110090126.png",
     "Pasted image 20251110024828.png",

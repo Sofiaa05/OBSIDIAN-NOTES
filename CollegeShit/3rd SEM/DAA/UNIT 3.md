@@ -63,9 +63,12 @@ Hence, building step by step gives the global optimum.
     
 - Set distance[S] to 0 and distance[v] = ∞, where v represents all the other vertices in the graph.
     
-- Add S to the visited[] array and find the adjacent vertices of S with the minimum distance.
+- Add S to the visited[] array and update the distance of its adjacent nodes using:
+	- d\[v] = d\[u] + w(u,v) if d\[v] < d\[u] + w(u,v).
+	
+- find the adjacent vertices of S with the minimum distance.
     
-- The adjacent vertex to S, say A, has the minimum distance and is not in the visited array yet. A is picked and added to the visited array and the distance of A is changed from ∞ to the assigned distance of A, say d1, where d1 < ∞.
+- The adjacent vertex to S, say A, has the minimum distance and is not in the visited array yet. A is picked and added to the visited array and the distance of A is changed from ∞ to the assigned distance of A (calculated previou step)
     
 - Repeat the process for the adjacent vertices of the visited vertices until the shortest path spanning tree is formed.
 ### Correctness
@@ -108,6 +111,10 @@ Shortest path from `s` to `v` can be built using shortest paths from `s` to inte
 ---
 
 ## Floyd Warshall
+
+The **Floyd–Warshall Algorithm** is a **dynamic programming algorithm** used to find the **shortest paths between all pairs of vertices** in a weighted graph (directed or undirected).
+
+It works even when edge weights are negative, as long as there are **no negative weight cycles**.
 The **Floyd–Warshall algorithm** works by maintaining a two-dimensional array that represents the distances between nodes. Initially, this array is filled using only the direct edges between nodes. Then, the algorithm gradually updates these distances by checking if shorter paths exist through intermediate nodes.
 
 This algorithm works for both the **directed** and **undirected weighted** graphs and can handle graphs with both **positive** and **negative weight edges**.
@@ -134,7 +141,15 @@ for (int k = 0; k < n; k++) {           // for each intermediate vertex
     }
 }
 ```
+### **Time Complexity**
 
+`O(n³)`
+
+There are 3 nested loops, each running `n` times.
+
+### **Space Complexity**
+
+`O(n²)`
 ### Correctness (Proof Outline)
 
 The **Floyd–Warshall algorithm** is based on **Dynamic Programming**.

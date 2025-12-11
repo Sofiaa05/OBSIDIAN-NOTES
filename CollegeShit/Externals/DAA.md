@@ -525,3 +525,209 @@ O(n)
 ---
 
 [[CollegeShit/3rd SEM/DAA/UNIT 3|UNIT 3]]
+
+## LCS
+
+
+## **1️⃣ Definition**
+
+The **Longest Common Subsequence (LCS)** problem is a classical dynamic programming problem in which we find the longest subsequence that is **common to two given strings** and appears in **the same relative order**, but **not necessarily contiguous**.
+
+---
+
+## **2️⃣ Algorithm**
+
+Let the two strings be:
+
+```
+X of length m
+Y of length n
+```
+
+We create a 2D array `dp[m+1][n+1]`, where:
+
+`dp[i][j]` = length of LCS of `X[0…i-1]` and `Y[0…j-1]`
+
+### **Algorithm Steps**
+
+```
+1. Initialize dp table of size (m+1) × (n+1) with 0
+
+2. For i = 1 to m:
+       For j = 1 to n:
+            If X[i-1] == Y[j-1] then
+                 dp[i][j] = 1 + dp[i-1][j-1]
+            Else
+                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+
+3. The value dp[m][n] gives the length of the LCS
+```
+
+
+
+## **3️⃣ Analysis**
+
+### **Time Complexity**
+
+```
+O(m × n)
+```
+
+Because we fill each cell of the DP table once, and there are `m × n` cells.
+
+### **Space Complexity**
+
+```
+O(m × n)
+```
+
+
+### **Optimality**
+
+- This DP solution is optimal because it avoids recalculations done in the exponential recursive approach.
+    
+- The naive recursive method has a time complexity of **O(2ⁿ)**, so DP improves performance drastically.
+    
+
+## **Example: Find LCS of the strings**
+
+```
+X = AGGTAB
+Y = GXTXAYB
+```
+
+---
+
+## **Step 1: Initialize DP Table**
+
+Let `m = length(X) = 6`, `n = length(Y) = 7`
+
+Create a table `dp[7][8]` (one extra row and column for zeros)
+
+---
+
+## **Step 2: Fill the Table**
+
+We compare characters of both strings:
+
+```
+If X[i-1] == Y[j-1] → dp[i][j] = 1 + dp[i-1][j-1]
+Else                → dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+```
+
+### **DP Table**
+
+|   | 0 | G | X | T | X | A | Y | B |
+| - | - | - | - | - | - | - | - | - |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| A | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+| G | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| G | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| T | 0 | 1 | 1 | 2 | 2 | 2 | 2 | 2 |
+| A | 0 | 1 | 1 | 2 | 2 | 3 | 3 | 3 |
+| B | 0 | 1 | 1 | 2 | 2 | 3 | 3 | 4 |
+
+
+---
+
+## **Step 3: Final Answer**
+
+The value in the **last cell** `dp[6][7] = 4`.
+
+So, the **length of the LCS = 4**
+
+---
+
+## **Step 4: LCS Reconstruction (Optional but impressive in exams)**
+
+Trace back from `dp[6][7]`:
+
+```
+Match found: B → take it
+Move diagonally
+Match found: A → take it
+Move diagonally
+Match found: T → take it
+Move diagonally
+Match found: G → take it
+```
+
+Reverse the collected characters:
+
+```
+LCS = GTAB
+```
+---
+## 0/1 knapsack
+
+
+## **1️⃣ Problem Statement**
+
+The **0/1 Knapsack Problem** is a classical optimization problem where:
+
+- We are given **n items**, each with a **weight** `w[i]` and a **profit/value** `p[i]`.
+    
+- We have a **knapsack** with a maximum **capacity W**.
+    
+- We must **select items** such that:
+    
+    - The **total weight** does not exceed `W`
+        
+    - The **total profit** is **maximum**
+        
+- Each item can be either:
+    
+    - **Included (1)** completely, or
+        
+    - **Excluded (0)** entirely  
+        **→ Partial selection is NOT allowed**
+        
+
+Hence the name **0/1** (take it or leave it).
+
+---
+
+## **2️⃣ Algorithm (Dynamic Programming)**
+
+We use a **2D DP table**:
+
+Let  
+`profit[i]` = profit of ith item  
+`weight[i]` = weight of ith item  
+`dp[i][w]` = maximum profit using first `i` items and knapsack capacity `w`
+
+### **Algorithm Steps**
+
+```
+1. Create a DP array dp[n+1][W+1]
+2. Initialize dp[0][*] = 0 and dp[*][0] = 0
+3. For i from 1 to n:
+       For w from 1 to W:
+            If weight[i] > w:
+                  dp[i][w] = dp[i-1][w]
+            Else
+                  dp[i][w] = max(
+                      dp[i-1][w],
+                      profit[i] + dp[i-1][w - weight[i]]
+                  )
+4. The answer is dp[n][W]
+```
+
+---
+
+## **3️⃣ Analysis**
+
+### **Time Complexity**
+
+```
+O(n × W)
+```    
+
+### **Space Complexity**
+
+```
+O(n × W)
+```
+    
+
+---
