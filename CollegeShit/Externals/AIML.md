@@ -1033,7 +1033,7 @@ Examples of heuristic values:
 ---
 
 
-## **A* Search Algorithm (A-Star Search) – Exam Ready Answer**
+## **A* Search Algorithm (A-Star Search)
 
 A* Search is one of the most important **informed (heuristic) search algorithms** in Artificial Intelligence.  
 It is widely used because it is **complete**, **optimal**, and **efficient**.
@@ -1098,7 +1098,7 @@ A* uses a **priority queue** for OPEN list.
 
 ---
 
-# ⭐ **WORKING EXAMPLE (EXAM PERFECT)**
+###  **WORKING EXAMPLE **
 
 Graph with g(n) and heuristic h(n):
 
@@ -1175,6 +1175,632 @@ This ensures A* finds the lowest-cost path.
     
 - Network routing algorithms
     
+
+---
+
+## Knowledge Representation and Reasoning
+
+Knowledge Representation and Reasoning (KRR) is a core area of Artificial Intelligence concerned with **how knowledge about the world is represented** inside a machine and **how the machine uses that knowledge to draw conclusions**.  
+A good representation must be structured, unambiguous, expressive, and suitable for reasoning.
+
+Two major formal approaches are:
+
+- **Propositional Logic (PL)**
+    
+- **First-Order Predicate Logic (FOPL)**
+    
+
+These form the foundation for AI reasoning systems.
+
+---
+
+## Approaches to Knowledge Representation
+
+Knowledge can be represented in different ways such as logic, semantic networks, frames, rules, ontologies, and scripts.  
+Here, we focus on **logic-based representation**, which includes:
+
+### Propositional Logic
+
+### First Order Predicate Logic
+
+### Inference Rules
+
+---
+
+## Propositional Logic (PL)
+
+Propositional Logic represents knowledge in the form of simple **true/false statements** (propositions).  
+Each proposition is an atomic statement such as:
+
+- “It is raining.”
+    
+- “The jug is full.”
+    
+
+These propositions are represented using symbols like **P, Q, R**, etc.
+
+### Syntax of Propositional Logic
+
+A propositional formula is formed using:
+
+#### Propositional symbols
+
+P, Q, R, …
+
+#### Logical connectives
+
+- **AND ( ∧ )**
+    
+- **OR ( ∨ )**
+    
+- **NOT ( ¬ )**
+    
+- **IMPLIES ( → )**
+    
+- **BICONDITIONAL ( ↔ )**
+    
+
+### Semantics
+
+Each proposition can be **True (T)** or **False (F)**.
+
+### Example
+
+Let:  
+P: It is raining  
+Q: I will take an umbrella
+
+A rule can be written as:  
+P → Q (“If it is raining, I will take an umbrella”)
+
+Propositional logic is easy to compute but limited because it cannot express relationships between objects (e.g., "All humans are mortal").
+
+---
+
+## First-Order Predicate Logic (FOPL)
+
+First-Order Predicate Logic overcomes the limitations of propositional logic by introducing **objects**, **predicates**, and **quantifiers**.  
+It can represent more complex knowledge about objects and their relationships.
+
+### Components of FOPL
+
+#### Constants
+
+Specific objects — John, India, Cat
+
+#### Variables
+
+x, y, z (represent unknown objects)
+
+#### Predicates
+
+Functions that describe properties or relations:
+
+- Human(x)
+    
+- Loves(John, Mary)
+    
+- GreaterThan(x, y)
+    
+
+#### Functions
+
+Father(x), HeightOf(x), etc.
+
+#### Quantifiers
+
+There are two quantifiers:
+
+1. **Universal Quantifier ( ∀ )**  
+    Means “for all”  
+    Example: ∀x Human(x) → Mortal(x)
+    
+2. **Existential Quantifier ( ∃ )**  
+    Means “there exists”  
+    Example: ∃x Loves(John, x)
+    
+
+### Example in FOPL
+
+“All humans are mortal.”  
+∀x Human(x) → Mortal(x)
+
+“John is a human.”  
+Human(John)
+
+Therefore, by reasoning, we conclude:  
+Mortal(John)
+
+FOPL is more expressive than PL and is widely used in AI reasoning systems.
+
+---
+
+## Inference Rules
+
+Inference rules allow AI systems to **derive new knowledge** from existing knowledge.  
+These rules operate over propositional and predicate logic.
+
+Below are important inference rules used in AI.
+
+---
+
+## Modus Ponens
+
+### Rule
+
+If
+
+1. P → Q
+    
+2. P
+    
+
+Then we can conclude:  
+Q
+
+### Example
+
+1. If it rains, the ground becomes wet. (R → W)
+    
+2. It is raining. (R)  
+    Therefore:  
+    W (ground becomes wet)
+    
+
+---
+
+## Modus Tollens
+
+### Rule
+
+If
+
+1. P → Q
+    
+2. ¬Q
+    
+
+Then we conclude:  
+¬P
+
+### Example
+
+1. If it is a dog, it has four legs. (D → F)
+    
+2. It does not have four legs. (¬F)  
+    Therefore:  
+    ¬D (it is not a dog)
+    
+
+---
+
+## Resolution Rule
+
+Resolution is a fundamental inference rule used in **automated theorem proving**.  
+It is based on eliminating complementary literals.
+
+### Basic Form
+
+From  
+(P ∨ Q)  
+and  
+(¬Q ∨ R)
+
+We infer:  
+(P ∨ R)
+
+### Example
+
+1. (Hot ∨ Cold)
+    
+2. (¬Cold ∨ Rain)  
+    Resolution gives:  
+    (Hot ∨ Rain)
+    
+
+Resolution is powerful because it can be used to build complete proof systems.
+
+---
+
+## AND-Elimination
+
+### Rule
+
+From a conjunction:  
+(P ∧ Q)
+
+We can conclude:  
+P  
+or  
+Q
+
+### Example
+
+1. (Tall ∧ Smart)  
+    We can infer:  
+    Tall  
+    Smart
+    
+
+---
+
+## Syllogism (Hypothetical Syllogism)
+
+Syllogism is a logical rule where conclusions are drawn from two related implications.
+
+### Rule
+
+If  
+P → Q  
+and  
+Q → R
+
+Then  
+P → R
+
+### Example
+
+1. If A is a bird, A has wings. (Bird(A) → Wings(A))
+    
+2. If A has wings, A can fly. (Wings(A) → Fly(A))  
+    Therefore:  
+    Bird(A) → Fly(A)
+    
+
+This shows chained reasoning in logic.
+
+---
+## Disjunctive Syllogism
+
+Disjunctive Syllogism is an important inference rule used in Propositional Logic.  
+It allows us to draw a valid conclusion when we know that **one of two statements is true**, and we also know that **one of them is false**.  
+From this, we infer that the _other_ statement must be true.
+
+---
+
+## Definition
+
+Disjunctive Syllogism states:
+
+From:
+1. P∨Q (P OR Q is true)
+2. ¬P (P is false)
+    
+
+We can conclude:
+
+3. Q
+    
+
+Similarly:
+
+If
+1. P∨Q
+2. ¬Q
+    
+
+Then:
+
+3. P
+    
+
+It eliminates the false part of a disjunction and concludes the remaining true part.
+
+---
+
+
+
+## Example 1
+
+Statement 1: “It is raining or it is sunny.”  
+R∨S
+
+Statement 2: “It is not raining.”  
+¬R
+
+Conclusion: “It is sunny.”  
+S
+
+---
+
+## Example 2
+
+Statement 1:  
+“John is at home or John is at office.”  
+H∨O
+
+Statement 2:  
+“John is not at home.”  
+¬H
+
+Conclusion:  
+John is at office.  
+
+    
+
+---
+
+## Types of Knowledge
+
+Knowledge in AI can be categorized into several types depending on how it represents reality and how it is used for reasoning.
+
+---
+
+## 1. Declarative Knowledge
+
+Declarative knowledge describes **facts about the world**.  
+It answers: _What is true?_
+
+### Examples
+
+- “Delhi is the capital of India.”
+    
+- “A triangle has three sides.”
+    
+
+This type of knowledge can be represented using logic, semantic networks, or ontologies.
+
+---
+
+## 2. Procedural Knowledge
+
+Procedural knowledge specifies **how to perform tasks** or **the steps to accomplish a goal**.  
+It answers: _How to do something?_
+
+### Examples
+
+- How to solve a puzzle
+    
+- How to diagnose a disease
+    
+- How to drive a car
+    
+
+Production rules and scripts are good representations of procedural knowledge.
+
+---
+
+## 3. Meta-Knowledge
+
+Meta-knowledge means **knowledge about knowledge**.  
+It tells the system how to choose, organize, or use other pieces of knowledge.
+
+### Example
+
+- “When multiple rules apply, choose the rule with the highest confidence.”
+    
+
+Used in expert systems for conflict resolution.
+
+---
+
+## 4. Heuristic Knowledge
+
+Heuristics are **rules of thumb** or **strategies** that help reach solutions quickly, though not guaranteed to be perfect.
+
+### Example
+
+- “In chess, control the center first.”
+    
+- “If stuck in a search problem, choose the option with the least cost.”
+    
+
+Heuristic knowledge makes AI more efficient but not always optimal.
+
+---
+
+## 5. Structural Knowledge
+
+Structural knowledge describes the **relationships between concepts**.
+
+### Examples
+
+- Hierarchies (Animal → Mammal → Dog)
+    
+- Part-whole structure (Car: engine, wheels, seats)
+    
+
+Semantic networks and frames often represent structural knowledge.
+
+---
+![[Pasted image 20251211210847.png]]
+
+## Reasoning in AI
+
+Reasoning is the process by which an AI system derives new facts, conclusions, or knowledge from existing information. 
+
+---
+
+## Forward Reasoning (Forward Chaining)
+
+Forward reasoning is a **data-driven** reasoning approach.  
+It starts from the **known facts** and applies rules to derive **new conclusions** until the goal is reached.
+
+### How it works
+
+1. Begin with a set of known facts in working memory.
+    
+2. Match these facts with the IF part of rules.
+    
+3. When a rule fits, apply it and add the THEN part to working memory.
+    
+4. Continue applying rules until:
+    
+    - The desired goal is obtained, or
+        
+    - No more new facts can be derived.
+        
+
+### Characteristics
+
+- Starts from initial data and moves forward.
+    
+- Useful when all facts are known but the goal is unknown.
+    
+- Common in **expert systems**, **diagnosis systems**, **monitoring systems**.
+    
+
+### Example
+
+Rules:
+
+```
+IF fever THEN infection
+IF infection THEN prescribe antibiotics
+```
+
+Facts: fever  
+Using forward reasoning → infection → prescribe antibiotics.
+
+---
+
+## Backward Reasoning (Backward Chaining)
+
+Backward reasoning is **goal-driven**.  
+It starts from the **goal** and works backward to see whether the facts support the goal.
+
+### How it works
+
+1. Start with the goal (what you want to prove).
+    
+2. Look for rules whose THEN part matches the goal.
+    
+3. Reduce the goal to sub-goals from the IF part.
+    
+4. Continue until:
+    
+    - Sub-goals match known facts, or
+        
+    - No rule can satisfy the goal.
+        
+
+### Characteristics
+
+- Starts from goal and works backward.
+    
+- Efficient when goal is known but data is incomplete.
+    
+- Used in **theorem proving**, **logic programming**, **Prolog**, **diagnostic reasoning**.
+    
+
+### Example
+
+Goal: prescribe antibiotics  
+Check rule:
+
+```
+IF infection THEN prescribe antibiotics
+```
+
+Now need to prove: infection  
+Check rule:
+
+```
+IF fever THEN infection
+```
+
+Since fever is a fact → goal proven.
+
+---
+
+## Difference Between Forward and Backward Reasoning
+
+|Basis|Forward Reasoning|Backward Reasoning|
+|---|---|---|
+|Approach|Data-driven|Goal-driven|
+|Start Point|Known facts|Desired goal|
+|Direction|From facts → goal|From goal → facts|
+|Best Used When|Many facts available, unclear goal|Specific goal known, fewer facts|
+|Efficiency|May generate unnecessary facts|More focused, checks only relevant rules|
+|Application|Expert systems, monitoring, prediction|Theorem proving, diagnostics, Prolog|
+
+---
+
+## Monotonic Reasoning
+
+Monotonic reasoning refers to reasoning systems where **adding new information does NOT invalidate previous conclusions**.
+
+### Characteristics
+
+- The set of conclusions can only **increase**, never decrease.
+    
+- Follows classical logic.
+    
+- Adding new facts cannot make previous inferences false.
+    
+
+### Example
+
+Facts:  
+“All birds have wings.”  
+“Penguin is a bird.”  
+Conclusion: “Penguin has wings.”
+
+If we add new facts, this conclusion remains valid because classical logic does not revise earlier conclusions.
+
+### Where used?
+
+- Mathematical logic
+    
+- Classical reasoning systems
+    
+- Traditional expert systems (without exceptions)
+    
+
+---
+
+## Non-Monotonic Reasoning
+
+Non-monotonic reasoning allows conclusions to be **withdrawn or modified** when new information arrives.
+
+### Characteristics
+
+- More realistic because real-world knowledge changes.
+    
+- Adding new facts may invalidate old conclusions.
+    
+- Supports reasoning with defaults and exceptions.
+    
+
+### Example
+
+Default knowledge:  
+“Typically, birds fly.”
+
+Facts:  
+“Penguin is a bird.”  
+We conclude: “Penguin flies.”
+
+But if we add new fact:  
+“Penguin cannot fly.”
+
+The earlier conclusion must be retracted.
+
+### Where used?
+
+- Default reasoning
+    
+- Common-sense reasoning
+    
+- AI planning and uncertain environments
+    
+- Expert systems with exceptions
+    
+- Medical diagnosis, real-world reasoning
+    
+
+---
+
+## Difference Between Monotonic and Non-Monotonic Reasoning
+
+|Basis|Monotonic Reasoning|Non-Monotonic Reasoning|
+|---|---|---|
+|Change in Knowledge|Adding new facts does not change old conclusions|Adding new facts can change or remove old conclusions|
+|Behavior|Knowledge only increases|Knowledge may increase or decrease|
+|Flexibility|Less flexible, rigid|More flexible, realistic|
+|Real-world Fit|Poor representation of changing knowledge|Models real-world uncertainty better|
+|Example|Classical propositional/predicate logic|Default logic, defeasible reasoning|
+|Conclusion Revision|Never revised|Often revised based on new information|
 
 ---
 
