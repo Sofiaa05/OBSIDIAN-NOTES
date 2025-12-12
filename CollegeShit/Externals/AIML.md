@@ -1177,7 +1177,7 @@ This ensures A* finds the lowest-cost path.
     
 
 ---
-
+# UNIT 2
 ## Knowledge Representation and Reasoning
 
 Knowledge Representation and Reasoning (KRR) is a core area of Artificial Intelligence concerned with **how knowledge about the world is represented** inside a machine and **how the machine uses that knowledge to draw conclusions**.  
@@ -1803,4 +1803,666 @@ The earlier conclusion must be retracted.
 |Conclusion Revision|Never revised|Often revised based on new information|
 
 ---
+
+# UNIT 3
+
+## Introduction to Machine Learning
+
+- Machine Learning is a subset of AI that enables systems to **learn from data** rather than being explicitly programmed.
+    
+- It identifies **patterns** in data and uses them to make predictions or decisions.
+    
+- ML improves automatically with experience.
+    
+- Used in applications such as recognition, prediction, classification, and automation.
+    
+
+---
+
+## Why Machine Learning
+
+- Traditional programming fails for complex, large, and dynamic data.
+    
+- ML automatically learns rules from data instead of relying on fixed logic.
+    
+- Helps handle **big data** efficiently.
+    
+- Improves accuracy over time through learning.
+    
+- Useful for tasks like speech recognition, image classification, recommendation systems.
+    
+- Enables **automation** and **data-driven decision-making**.
+    
+
+---
+
+## Types of Machine Learning Problems
+
+### Supervised Learning
+
+- Model is trained using labeled data. Data contains **input + output labels**.
+    
+- The goal is to learn a mapping from **input (X)** to **output (Y)**..
+    
+- Used for **classification** (spam detection) and **regression** (price prediction).
+    
+
+### Unsupervised Learning
+
+- Data has **inputs only**, no labels.
+    
+- Model finds **patterns, groups, structures**.
+    
+- Used for **clustering** (customer segmentation), **dimensionality reduction**.
+    
+
+### Reinforcement Learning
+
+- Learning by **trial and error**.
+    
+- Agent interacts with environment and receives **rewards or penalties**.
+    
+- Used in robotics, games, self-driving systems.
+    
+
+---
+
+## Applications of Machine Learning
+
+- **Healthcare:** disease prediction, medical imaging.
+    
+- **Finance:** fraud detection, credit scoring.
+    
+- **E-commerce:** product recommendation, customer behavior analysis.
+    
+- **Transportation:** self-driving cars, traffic prediction.
+    
+- **Social Media:** content recommendation, sentiment analysis.
+    
+- **Security:** intrusion detection, face recognition.
+    
+- **Industry:** predictive maintenance, automation.
+    
+---
+
+## Regression in Supervised Learning
+
+Regression is used when the output variable (Y) is **continuous/numerical**.  
+Examples: predicting temperature, price of a house, salary, demand, marks, etc.
+
+Regression finds the **relationship** between input variables (features) and the continuous output.
+
+Types:
+
+1. Simple Linear Regression
+    
+2. Multiple Linear Regression
+    
+
+---
+
+## Simple Linear Regression
+
+### Meaning
+
+- Simple Linear Regression uses **one independent variable (X)** to predict **one dependent variable (Y)**.
+    
+- It assumes the relationship between X and Y is **linear** (a straight line).
+    
+![[Pasted image 20251211215049.png]]
+### Equation
+
+Y = mx  + c
+Where:
+
+- **Y** = predicted output
+    
+- **X** = input variable
+    
+- **c** = intercept
+    
+- **m** = slope (how much Y changes when X increases by 1)
+    
+
+### Easy Example
+
+Predicting marks from hours studied.
+
+|Hours (X)|Marks (Y)|
+|---|---|
+|1|45|
+|2|50|
+|3|55|
+
+As hours increase, marks increase in a straight-line pattern.
+
+### What the model learns
+
+- Slope (m): how much marks increase for every extra hour studied
+    
+- Intercept (c): expected marks if hours studied = 0
+    
+
+### Uses
+
+- House price prediction (based on size only)
+    
+- Salary prediction (based on years of experience)
+    
+- Sales prediction (based on advertising cost)
+![[Pasted image 20251211214950.png]]
+
+## Multiple Linear Regression
+
+Multiple Linear Regression is a supervised learning technique used when we want to predict a single continuous output variable **Y** using **two or more input variables** (features).  
+It generalizes simple linear regression by adding more predictors.
+
+### General Equation
+
+![[Pasted image 20251211220944.png]]
+
+Where:
+
+- (Y) = predicted value
+    
+- (X_1, X_2, ..., X_n) = independent variables
+    
+- (b_1, b_2, ..., b_n) = coefficients showing how much each variable affects Y
+    
+- (a) = intercept
+    
+
+### Meaning of the equation
+
+- (b1) tells how much Y changes if (X1) increases by 1 unit (keeping others constant).
+    
+- Intercept (a) is the predicted value of Y when all X’s are 0.
+    
+
+---
+
+## Easy Numeric Example
+
+We want to **predict house price (Y)** using two factors:
+
+- (X1): Size of house (in 100 sq ft)
+    
+- (X2): Number of rooms
+    
+
+Assume we have this small dataset:
+
+| House | Size (X1) | Rooms (X2) | Price (Y) |
+| ----- | --------- | ---------- | --------- |
+| 1     | 10        | 3          | 90        |
+| 2     | 12        | 4          | 110       |
+| 3     | 15        | 5          | 150       |
+
+
+---
+
+## Step 1: Compute Means
+
+![[Pasted image 20251211221042.png]]
+
+---
+
+## Step 2: Use simplified coefficient formulas
+
+For two variables, the coefficient formulas are:
+
+![[Pasted image 20251211221058.png]]
+
+We calculate them separately to make it simple.
+
+---
+
+## Step 3: Calculating (b_1)
+
+
+|X₁|X₁ − X̄₁|Y − Ȳ|Product|
+|---|---|---|---|
+|10|-2.33|-26.67|62.11|
+|12|-0.33|-6.67|2.20|
+|15|2.67|33.33|88.89|
+
+![[Pasted image 20251211221136.png]]
+
+Now compute denominator:
+
+|X₁ − X̄₁|Square|
+|---|---|
+|-2.33|5.43|
+|-0.33|0.11|
+|2.67|7.13|
+
+![[Pasted image 20251211221154.png]]
+
+---
+
+## Step 4: simlilarly calculate b2
+
+ b2 = 30
+
+---
+
+## Step 5: Calculate Intercept (a)
+![[Pasted image 20251211221301.png]]
+---
+## Classification:
+
+Classification is a **supervised machine learning** technique used to predict **categorical outputs** (labels or classes).  
+
+In classification, the output is always a **category**, not a number.
+
+Classification means grouping or assigning data points into predefined **classes** based on their features.
+
+The model learns from labeled training data:
+
+- Inputs (X)
+    
+- Outputs (class labels) (Y)
+    
+
+Then it predicts the correct class for new, unseen data.
+
+### Examples
+
+- Email classification → “spam” or “not spam”
+    
+- Weather classification → “rainy”, “sunny”, “cloudy”
+    
+- Medical diagnosis → “positive” or “negative”
+    
+- Student performance → “pass” or “fail”
+    
+- Image recognition → “dog”, “cat”, “car”, etc.
+    
+
+---
+
+## Difference Between Classification and Regression
+
+|Basis|Classification|Regression|
+|---|---|---|
+|Output Type|Categorical (class labels)|Continuous numerical values|
+|Examples of Output|spam/not spam, disease/no disease, type of flower|price, salary, temperature, marks|
+|Goal|Assign input to a class|Predict a continuous value|
+|Algorithms|Logistic Regression, KNN, Naive Bayes, Decision Tree, SVM|Simple Linear Regression, Multiple Regression|
+|Error Measure|Accuracy, Precision, Recall, F1-score|MSE, RMSE, MAE|
+|Decision Boundary|Yes (separates classes)|Not required|
+
+---
+
+## Coefficient of Determination (R²)
+
+
+R² tells you **how well your regression model fits the data**.
+
+In even simpler words:
+
+**R² tells you how much of the change in Y (output) is explained by X (input).**
+
+If R² is high → Your model is good.  
+If R² is low → Your model is poor.
+
+---
+
+## Why do we need R²?
+
+Imagine you are predicting marks based on hours studied.
+
+Some students study more → get more marks.  
+Some study less → get fewer marks.
+
+R² tells you **how much this relationship actually explains the marks**.
+
+Example:  
+If R² = 0.80 → 80% of the marks can be explained using hours studied.  
+Remaining 20% is random factors like luck, exam difficulty, stress, etc.
+
+---
+
+## Formula (simple explanation)
+
+![[Pasted image 20251211230347.png]]
+
+
+**SST → Total variation in Y**
+
+How much Y varies overall.
+
+**SSE → Error made by the model**
+
+How much your predictions differ from actual Y.
+
+If model makes **small errors**, SSE is small → R² becomes big.  
+If model makes **huge errors**, SSE is large → R² becomes small.
+
+---
+
+## R² Value Meaning
+
+|R² Value|Meaning|
+|---|---|
+|1|Perfect model (100% accurate)|
+|0|Model explains nothing|
+|Between 0 and 1|The higher, the better|
+
+
+
+---
+
+## Easy Numerical Example
+
+Suppose actual marks and predicted marks:
+
+|Student|Actual Y|Predicted Y|Error (Actual - Predicted)|
+|---|---|---|---|
+|1|50|48|2|
+|2|60|58|2|
+|3|70|65|5|
+
+### Step 1: Compute SSE (sum of squared errors)
+
+Square each error:
+
+2² = 4  
+2² = 4  
+5² = 25
+
+SSE = 4 + 4 + 25 = **33**
+
+### Step 2: Compute SST (total variation)
+
+SST is how much actual values vary from the mean.
+
+Assume SST (given or computed) = **100**
+
+### Step 3: Compute R²
+
+![[Pasted image 20251211230451.png]]
+
+### Meaning:
+
+67% of the changes in marks are explained by the model.
+
+---
+
+## Correlation (r)
+
+Correlation tells you **how strongly** two variables are related AND **in which direction**.
+
+Simple meaning:
+
+- If one goes up and the other also goes up → positive correlation
+    
+- If one goes up and the other goes down → negative correlation
+    
+- If one doesn’t affect the other → no correlation
+    
+
+Correlation is always between **-1 and +1**.
+
+| r Value    | Meaning                       |
+| ---------- | ----------------------------- |
+| +1         | Perfect positive relationship |
+| -1         | Perfect negative relationship |
+| 0          | No relationship               |
+
+
+---
+
+## Easy Example (No calculations)
+
+Suppose this data:
+
+|Hours (X)|Marks (Y)|
+|---|---|
+|1|40|
+|2|50|
+|3|60|
+|4|70|
+
+As hours increase → marks increase.
+
+Here, **r is close to +1**  
+Meaning: strong positive relationship.
+
+Second example:
+
+|Hours (X)|Errors made (Y)|
+|---|---|
+|1|20|
+|2|15|
+|3|10|
+|4|5|
+
+As hours increase → errors decrease  
+Relationship is **negative**, r ≈ -1
+
+---
+
+### Relationship Between R² and r
+
+In **simple linear regression**:
+R^2 = r^2  
+
+Example:  
+If r = 0.8, then:
+
+R^2 = 0.64  
+
+Meaning:
+
+- Correlation (0.8) says relationship is strong
+    
+- R² (0.64) says model explains 64% of variation
+    
+
+---
+
+# Overfitting and Underfitting
+
+## Overfitting
+
+### Meaning
+
+Overfitting happens when a model learns **too much detail** from the training data.  
+It learns not only the actual patterns but also the **noise, mistakes, and random fluctuations**.
+
+Because of this, the model works **very well on training data**, but **very poorly on new/unseen data**.
+
+### Why does overfitting happen?
+
+- Model is too complex
+    
+- Too many features
+    
+- Too many parameters
+    
+- Training for too long
+    
+- Not enough training data
+    
+
+### Example 
+
+You memorize answers for 10 questions.  
+You score full marks on those 10 questions (training data).  
+But in the real exam (new data), you fail because questions are different.
+
+This is exactly overfitting.
+    
+
+### How to reduce overfitting
+
+- Use more training data
+    
+- Reduce model complexity
+    
+- Use regularization
+    
+- Use cross-validation
+    
+- Early stopping (stop training earlier)
+    
+
+---
+
+## Underfitting
+
+### Meaning
+
+Underfitting happens when the model is **too simple** and **cannot learn the actual patterns** in the data.
+
+The model performs **poorly on both training and test data**.
+
+### Why does underfitting happen?
+
+- Model is too simple
+    
+- Not enough training time
+    
+- Wrong model chosen
+    
+- Important features removed
+    
+
+### Example 
+
+You study only chapter 1 for an exam of 10 chapters.  
+You fail in practice tests and also fail in the main exam.
+
+This is underfitting.
+
+
+### How to reduce underfitting
+
+- Add more features
+    
+- Increase model complexity
+    
+- Train for longer time
+    
+- Choose a better model
+
+
+# Bias and Variance 
+
+Bias and Variance are two fundamental sources of error in any machine learning model.  
+Together, they explain **why a model fails** (either underfits or overfits).  
+## What is Bias?
+Bias is the **error that comes from using a model that is too simple** for the problem.
+
+A high-bias model **ignores important patterns** in the data and makes strong assumptions.
+
+Think of bias as “**not learning enough**.”
+
+This leads to **underfitting**.
+
+### Why does Bias occur?
+ 1. The model is too simple
+	- Using a straight line (linear model) to fit a curved relationship
+	- Using few rules to solve a complex problem
+    
+2. Model makes strong assumptions
+
+	For example:
+	
+	- Assuming data is linear even when it is not
+	    
+	- Assuming features do not interact
+    
+ 3. Not enough training
+
+---
+
+## What is Variance?
+
+- Variance is the **error that comes from a model being too sensitive** to the training data.
+- This leads to **overfitting**.
+
+A high-variance model learns:
+
+- noise
+    
+- random fluctuations
+    
+- tiny details that do not matter
+    
+
+Think of variance as “**learning too much**.”
+
+---
+### Why does Variance occur?
+ 1. Model is too complex
+ 2. Not enough training data
+3. Overtraining
+
+
+---
+
+### Bias–Variance Tradeoff
+
+This is one of the most important ideas in machine learning.
+
+You cannot reduce both bias and variance at the same time.
+
+- If you reduce bias (by using a more complex model), variance increases
+    
+- If you reduce variance (by using a simpler model), bias increases
+    
+
+We want a model that balances both.
+
+### Ideal model
+
+- Low bias (learns the important patterns)
+    
+- Low variance (does not memorize noise)
+    
+
+---
+
+## Confusion Matrix
+
+A **Confusion Matrix** is a table used in classification problems to evaluate how well a machine learning model is performing.  
+It compares the **predicted labels** given by the model with the **actual labels** in the dataset.
+
+A confusion matrix shows:
+
+- Where the model is correct
+    
+- Where the model is making mistakes
+    
+- The type of mistakes it is making
+    
+
+It is the **foundation** for calculating evaluation metrics like accuracy, precision, recall, and F1-score.
+
+---
+
+### Structure of a Confusion Matrix
+
+|                        | **Actual Positive** | **Actual Negative** |
+| ---------------------- | ------------------- | ------------------- |
+| **Predicted Positive** | True Positive (TP)  | False Positive (FP) |
+| **Predicted Negative** | False Negative (FN) | True Negative (TN)  |
+
+
+### Why is the Confusion Matrix Important?
+
+Because accuracy alone does **not** give the full picture.
+
+A confusion matrix:
+
+- Shows the **number of errors**
+    
+- Shows **which type of error** the model makes more
+    
+- Helps you understand whether the model is weak in detecting positives or negatives
+    
+- Helps calculate all other evaluation metrics
+    
 
