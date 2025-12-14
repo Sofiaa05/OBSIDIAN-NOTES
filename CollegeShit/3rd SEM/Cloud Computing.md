@@ -13,6 +13,7 @@ Cloud Computing has evolved from the Distributed system to the current technolog
 - independent systems which are physically located in various places but are connected through the network.
 	- resource sharing, open to all, fault detection
 	- main disadvantage is that all the plan has to be in the same location
+A **Distributed Computer System** is a collection of **independent computers (nodes)** that appear to users as a **single coherent system**. These computers communicate and coordinate their actions by **passing messages over a network**
 ##### Mainframe Computing:
 - Among the four types of computers, mainframe computer performs very fast and lengthy computations easily.
 - Mainframe computing due to its ability to **deal with a large amount of data**
@@ -30,6 +31,21 @@ Cloud Computing has evolved from the Distributed system to the current technolog
 - provides services based on pay-per-use model.
 
 ---
+
+| Feature        | **Grid Computing**                                     | **Cloud Computing**                           |
+| -------------- | ------------------------------------------------------ | --------------------------------------------- |
+| Definition     | Uses resources from multiple locations & organizations | Provides computing services over the internet |
+| Ownership      | Multiple organizations                                 | Single cloud provider                         |
+| Resource type  | Heterogeneous                                          | Mostly homogeneous                            |
+| Cost model     | Usually collaborative / shared                         | Pay-as-you-go                                 |
+| Scalability    | Limited, slow                                          | Highly elastic, instant                       |
+| Virtualization | Not mandatory                                          | Core component                                |
+| Management     | Complex                                                | Easy                                          |
+| User control   | High                                                   | Depends on service model                      |
+| Reliability    | Depends on nodes                                       | High (SLA-based)                              |
+| Security       | Complex due to multiple owners                         | Strong provider-managed security              |
+| Availability   | Not guaranteed                                         | High availability                             |
+| Ease of use    | Difficult                                              | User-friendly                                 |
 ### Characteristics
 
 ##### **1. On-demand self-service**
