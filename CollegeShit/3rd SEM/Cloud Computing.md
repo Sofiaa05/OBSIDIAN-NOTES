@@ -448,17 +448,11 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 ## UNIT 2:
 ### Virtualisation
 - creation of a virtual version of a physical resource - such as operating system, server, storage device or network using a **hypervisor** or **virtual machine monitor (VMM)**
-
-#### Key Concepts:
-| **Term**                 | **Description**                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| **Host Machine**         | The physical system on which virtualized software (hypervisor) runs.                                      |
-| **Guest Machine**        | The virtual machines (VMs) created on the host.                                                           |
-| **Hypervisor**           | Technology / software layer that is used to create virtualized environment.                               |
-| **Virtual Machine (VM)** | A copy of a computer system running its own OS and applications borrowed from the host machine virtually. |
+- **Virtualization** is a technology that allows **multiple virtual machines (VMs)** to run on a **single physical machine** by sharing hardware resources such as CPU, memory, storage, and network.
 
 #### Hypervisor:
 - software that lets run multiple OS run on a single physical machine.
+- A **hypervisor** is software that creates and manages virtual machines.
 - Manages hardware resources (CPU, memory, storage) and allocates them to virutal machine.
 ##### Types of hypervisors
 ###### Type-1 (Bare-Metal Hypervisor):
@@ -466,11 +460,65 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 - Doesn't rely on host's OS
 - better performance and security as there is no intermediary OS
 -  **Example:** XenServer, Microsoft Hyper-V
+###### Advantages (Pros)
+
+- High performance
+-  Better security
+-  Direct access to hardware
+-  Suitable for data centers & cloud
+    
+```
+Applications
+-------------
+Guest OS
+-------------
+Hypervisor
+-------------
+Hardware
+
+```
+---
+
+###### Disadvantages (Cons)
+
+- Complex installation
+- Requires skilled administrators
+-  Higher initial cost
 ###### Type-2 (Hosted Hypervisor):
 - runs on top of host OS
 - generally used for desktop virtualization, development, and testing environments where a user needs to run multiple OSs on their personal computer.
 - performance lower than type-1 due to OS overhead
 - **Example:** Oracle VirtualBox, VMware workstation
+```
+Applications
+-------------
+Guest OS
+-------------
+Hypervisor
+-------------
+Host OS
+-------------
+Hardware
+
+```
+
+###### Advantages (Pros)
+
+- Easy to install
+- User-friendly
+-  Ideal for testing & development
+-  Runs on personal computers
+    
+
+---
+
+###### Disadvantages (Cons)
+
+- Lower performance
+- Depends on host OS
+- Less secure
+- Not suitable for production cloud
+
 #### Implementation of Virtualization
 | **Step**                             | **Description**                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------- |
@@ -585,8 +633,8 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 #### Virtualisation implementation Techniques:
 
 ##### 1. Full Virtualization
-
-- In this method, the **entire hardware system is simulated**.
+- The guest OS is **not aware** that it is virtualized.
+- In this method, the **entire hardware system is simulated**, allowing the **guest operating system to run without any modification**, as if it were running on a real physical machine.
     
 - Multiple operating systems (OS) can run **without any modification** inside separate **Virtual Machines (VMs)**.
     
@@ -594,6 +642,15 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
     
 - **Example:** VMware, Oracle VirtualBox.
     
+```
+Applications
+-------------
+Guest OS (Unmodified)
+-------------
+Hypervisor
+-------------
+Hardware
+```
 
 **Advantages:**
 
@@ -614,7 +671,17 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
 - Requires modifications to the guest operating systems
 - The **guest OS is modified** to work with the **hypervisor**.
 - **Example:** Xen Hypervisor.
-    
+
+```
+Applications
+-------------
+Guest OS (Modified)
+-------------
+Hypervisor
+-------------
+Hardware
+
+```
 
 **Advantages:**
 
@@ -631,6 +698,16 @@ Most cloud providers offer **data encryption, backup, and redundancy** to protec
     
 
 ---
+
+| Feature               | Full Virtualization (TYPE-2) | Para-Virtualization (TYPE -1) |
+| --------------------- | ---------------------------- | ----------------------------- |
+| Guest OS modification | Not required                 | Required                      |
+| Hardware emulation    | Yes                          | No                            |
+| Performance           | Moderate                     | High                          |
+| Overhead              | High                         | Low                           |
+| OS awareness          | No                           | Yes                           |
+| Compatibility         | High                         | Limited                       |
+| Example               | VMware                       | Xen (PV mode)                 |
 
 ##### 3. OS-Level Virtualization (Containerization)
 
@@ -881,13 +958,23 @@ Security in cloud computing means protecting:
 - Ensures **data integrity, confidentiality, and compliance**.
     
 
-##### 8. Redundancy and High Availability
+##### 8. Cooling Systems
+Servers generate a lot of heat.
 
-- Includes **redundant components** such as backup power, cooling, and network paths.
+###### Components:
+
+- Air conditioners
     
-- **Failover mechanisms** like backup servers and clustering ensure continuous service.
+- Chillers
     
-- Reduces the risk of downtime during failures.
+- Cooling fans
+    
+
+###### Purpose:
+
+- Maintain optimal temperature
+    
+- Prevent hardware failure
     
 
 ---
@@ -994,3 +1081,373 @@ The technical phasing of a data centre focuses on **implementing technology laye
     - Upgrade hardware and software.
         
     - Implement advanced technologies like AI, SDN, and automation to improve efficiency and reliability.
+---
+
+# PYQ
+
+## Containerisation vs virtualisation
+
+
+> **Containerisation** is a lightweight virtualization technology that allows applications to run in isolated environments called **containers**, sharing the same operating system kernel.
+
+---
+
+### Simple Explanation
+
+- One machine
+    
+- One OS kernel
+    
+- Multiple **containers**
+    
+- Each container has:
+    
+    - App
+        
+    - Libraries
+        
+    - Dependencies
+        
+- Containers **do NOT need a full OS**
+    
+
+-  Faster than virtual machines
+
+#### DOCKER
+> **Docker** is an open-source containerisation platform that allows developers to build, package, ship, and run applications inside containers.
+
+---
+
+### In Simple Words
+
+Docker is a **tool** that:
+
+- Creates containers
+    
+- Manages containers
+    
+- Runs applications anywhere
+
+
+| Feature        | Virtualisation     | Containerisation    |
+| -------------- | ------------------ | ------------------- |
+| Level          | Hardware-level     | OS-level            |
+| OS required    | Yes (Guest OS)     | No (Shares Host OS) |
+| Weight         | Heavy              | Lightweight         |
+| Startup time   | Slow               | Very fast           |
+| Performance    | Lower              | Higher              |
+| Resource usage | High               | Low                 |
+| Isolation      | Strong             | Moderate            |
+| Scalability    | Limited            | High                |
+| Cost           | Higher             | Lower               |
+| Cloud usage    | Traditional clouds | Modern cloud apps   |
+
+---
+
+## Binary Translation as a Method for Achieving Full Virtualization**
+
+**Binary Translation** is a technique used in **full virtualization** where the **hypervisor dynamically translates sensitive or privileged instructions** of the guest operating system into safe instructions that can run on the physical hardware.
+
+The **guest OS is not modified** and is **unaware** that it is running in a virtual environment.
+
+---
+
+### Why Binary Translation is Needed?
+
+Some CPU instructions:
+
+- Cannot run directly in user mode
+    
+- Can cause system crashes if executed by guest OS
+    
+
+Binary translation:
+
+- Detects such instructions
+    
+- Replaces them with safe instructions
+    
+- Ensures correct execution
+    
+
+---
+
+### How Binary Translation Works
+
+1. Guest OS issues machine instructions
+    
+2. Hypervisor scans the instruction stream
+    
+3. Privileged instructions are translated
+    
+4. Translated code is executed safely
+    
+5. Results are returned to the guest OS
+    
+
+📌 This process happens **at runtime**
+
+---
+
+### Role of Binary Translation in Full Virtualization
+
+- Enables **unmodified guest OS**
+    
+- Provides **complete hardware abstraction**
+    
+- Maintains **isolation and security**
+    
+- Makes full virtualization possible even on non-virtualization-aware CPUs
+    
+
+---
+
+### Examples
+
+- VMware (early versions)
+    
+- QEMU (with translation)
+    
+
+---
+
+### Advantages of Binary Translation
+
+- No OS modification required
+    
+- Supports legacy operating systems
+    
+- High compatibility
+    
+
+---
+
+### Disadvantages
+
+- Performance overhead
+    
+- Complex implementation
+    
+- Slower than hardware-assisted virtualization
+    
+---
+Below is a **clear, exam-ready explanation** of the **key components of Amazon AWS**, written in **easy language**, with **definitions, examples, and a diagram description** you can reproduce in exams.
+
+---
+
+## Illustrate the Key Components of Amazon AWS
+
+**Amazon Web Services (AWS)** is a cloud computing platform provided by Amazon that offers **on-demand computing services** such as computing power, storage, databases, networking, and security on a **pay-as-you-use** basis.
+
+---
+
+### Key Components of Amazon AWS
+
+AWS is broadly divided into the following major components:
+
+1. **Compute Services**
+    
+2. **Storage Services**
+    
+3. **Database Services**
+    
+4. **Networking & Content Delivery**
+    
+5. **Security & Identity Services**
+    
+6. **Management & Monitoring Services**
+    
+
+---
+
+### Compute Services
+
+These services provide **virtual servers and computing power**.
+
+#### Amazon EC2 (Elastic Compute Cloud)
+
+- Virtual machines in the cloud
+    
+- Scalable computing power
+    
+- Pay only for usage
+    
+
+📌 Example: Hosting a web application
+
+---
+
+#### AWS Lambda
+
+- Serverless computing
+    
+- Runs code without managing servers
+    
+
+📌 Example: Running backend logic on events
+
+---
+
+#### Elastic Beanstalk
+
+- Platform for deploying applications
+    
+- Automatically manages infrastructure
+    
+
+---
+
+###  Storage Services
+
+Used to **store and retrieve data**.
+
+#### Amazon S3 (Simple Storage Service)
+
+- Object storage
+    
+- Highly durable and scalable
+    
+
+📌 Example: Storing images, videos, backups
+
+---
+
+#### Amazon EBS (Elastic Block Store)
+
+- Block storage for EC2
+    
+- Used as virtual hard disks
+    
+
+
+---
+
+### Database Services
+
+Provide **managed databases**.
+
+#### Amazon RDS (Relational Database Service)
+
+- Managed relational databases
+    
+- Supports MySQL, PostgreSQL, Oracle
+    
+
+---
+
+#### Amazon DynamoDB
+
+- NoSQL database
+    
+- Fast and scalable
+    
+
+---
+
+### Networking & Content Delivery
+
+These services manage **network connectivity and data delivery**.
+
+#### Amazon VPC (Virtual Private Cloud)
+
+- Private network in AWS
+    
+- Secure and isolated environment
+    
+
+---
+
+#### Elastic Load Balancer (ELB)
+
+- Distributes traffic across servers
+    
+- Improves availability
+    
+    
+---
+
+### Security & Identity Services
+
+Used to **secure AWS resources**.
+
+#### AWS IAM (Identity and Access Management)
+
+- Manages users and permissions
+    
+- Controls access to AWS services
+    
+
+---
+
+#### AWS Shield & WAF
+
+- Protection against DDoS attacks
+    
+- Web application firewall
+    
+
+---
+
+### Management & Monitoring Services
+
+Used to **monitor and manage AWS resources**.
+
+#### Amazon CloudWatch
+
+- Monitors performance and usage
+    
+- Generates alerts
+    
+
+---
+
+#### AWS CloudTrail
+
+- Logs user activity
+    
+- Useful for auditing
+    
+
+---
+
+#### AWS Auto Scaling
+
+- Automatically adjusts resources
+    
+- Maintains performance
+    
+
+---
+
+## 🔹 AWS Architecture Diagram (How to Draw in Exams)
+
+```
+Users
+  |
+Internet
+  |
+CloudFront
+  |
+Load Balancer
+  |
+EC2 Instances
+  |
+Database (RDS / DynamoDB)
+  |
+Storage (S3 / EBS)
+```
+
+---
+
+### Advantages of AWS
+
+- High scalability
+    
+- Pay-as-you-use
+    
+- High availability
+    
+- Global presence
+    
+- Strong security
+    
